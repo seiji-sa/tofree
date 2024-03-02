@@ -1,0 +1,44 @@
+@use './globals' as *;
+
+/* contact
+ ==========================================================================================*/
+ .contact{
+    max-width: 800px;
+    margin: 0 auto;
+    background: $cMain;
+    color: #fff;
+    padding-bottom: 1.5rem;
+    position: relative;
+    .sec-title{
+        &::before{
+            background: $cWhite !important;
+        }
+    }
+    .c-container{
+        text-align: center;
+        background: #fff;
+        padding: 2rem;
+       max-width: 600px;
+        margin: 20px 1rem 0;
+        @include mq(){
+            display: flex;
+            margin: 20px auto 0;
+        justify-content: space-around;
+
+        }
+        .c-txt{
+            color: #000;
+        }
+        .c-btn{
+           background: $cBlack;
+            color: white;
+            padding: 1rem 2.5rem;
+        }
+    }
+}
+
+.footer-def{
+    @include mq(){
+        margin-top: 0px !important;
+    }
+}

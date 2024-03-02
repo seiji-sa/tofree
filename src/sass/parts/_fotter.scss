@@ -1,0 +1,17 @@
+@use '../globals' as *;
+.footer{
+    background: rgba($color: #000000, $alpha: .9);
+    color: rgb(213, 213, 213);
+    text-align: center;
+    padding: 8rem 3rem 4rem;
+    @include mq(){
+        margin-top: -70px;
+        z-index: -1;
+    }
+    .f-list{
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        gap: 10%;
+    }
+}

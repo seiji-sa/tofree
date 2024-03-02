@@ -1,0 +1,83 @@
+@use './globals' as *;
+
+// post系のcss single.scss
+.archive{
+    &.post-title{
+        font-size: 16px;
+        @include mq(){
+            font-size: 20px;
+        }
+    }
+    &.post-date{
+        margin: 20px 0;
+        font-size: 12px;
+        @include mq(){
+            font-size: 16px;
+        }
+    }
+    &.post-txt{
+        font-size: 14px;
+        margin-bottom: 20px;
+        @include mq(){
+            font-size: 18px;
+        }
+    }
+
+}
+.news-page{
+    & h3{
+        font-size: 24px;
+        margin: 30px 0;
+    }
+    & img{
+        margin-bottom: 20px;
+    }
+    & p{
+        margin-bottom: 10px;
+    }
+    .a-p__item{
+        margin-bottom: 60px;
+    }
+}
+
+.a-p-list{
+    .a-p__item > a{
+        @include mq(){
+            display: flex;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .a-p-img{
+            @include mq(){
+                width: 40%;
+            }
+        }
+        .a-p-txt{
+            @include mq(){
+                width: 60%;
+            }
+        }
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+    font-size: 20px;
+  }
+
+.page-num{
+    display:flex;
+    gap: 10px;
+}
+  .page-num li {
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    &:not(:nth-child(4)){
+        border: 1px solid #000;
+    }
+}

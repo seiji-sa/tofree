@@ -16,6 +16,11 @@
 
 // cando
 // =======================================
+.cado-wrapper{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0;
+}
 .cando-list{
     .cando-item{
         margin-bottom: 30px;
@@ -85,11 +90,14 @@
                 height: 492px;
                 position: absolute;
                 bottom: 60px;
-                left: 0px;
+                left: -60px;
             }
         }
     }
     .cando__img_right{
+        width: 60%;
+        margin-top: -60px;
+        z-index: 2;
         margin-left: auto;
         & img{
             @include mq(){
@@ -97,7 +105,7 @@
                 height: 492px;
                 position: absolute;
                 bottom: 60px;
-                right: 0px;
+                right: -60px;
             }
         }
     }

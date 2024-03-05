@@ -285,6 +285,12 @@ section {
   padding: 3rem;
 }
 
+.cado-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0;
+}
+
 .cando-list .cando-item {
   margin-bottom: 30px;
 }
@@ -364,10 +370,13 @@ section {
     height: 492px;
     position: absolute;
     bottom: 60px;
-    left: 0px;
+    left: -60px;
   }
 }
 .cando-list .cando__img_right {
+  width: 60%;
+  margin-top: -60px;
+  z-index: 2;
   margin-left: auto;
 }
 @media screen and (min-width: 835px) {
@@ -376,7 +385,7 @@ section {
     height: 492px;
     position: absolute;
     bottom: 60px;
-    right: 0px;
+    right: -60px;
   }
 }
 

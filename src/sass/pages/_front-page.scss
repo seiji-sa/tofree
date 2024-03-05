@@ -4,7 +4,7 @@
  ==========================================================================================*/
 
 .hero{
-    background: url(../../../img/AdobeStock_463369910.png)  no-repeat center / auto;
+    background: url(../../img/AdobeStock_463369910.png)  no-repeat center / auto;
     .hero__txt{
         padding: 10rem 0;
         .hero__txt_left{
@@ -35,12 +35,13 @@
         background: $cMain;
         color: white;
         border-radius: 4rem;
-        padding: 14px 39px;
+        padding: 10px 30px;
         margin-top: 5rem;
         font-size: 24px;
-        }
         @include mq(){
+            padding: 14px 44px;
             font-size: 36px;
+        }
         }
     }
 
@@ -53,49 +54,70 @@
 section{
     line-height: 1.7;
 }
-.sec-title{
-    text-align: center;
-    font-size: 30px;
-    position: relative;
-    &::before{
-        content: "";
-        position: absolute;
-        top: 100%;
-        left: 50%;
-        width: 55px;
-        height: 3px;
-        transform: translateX(-50%);
-        background: $cBlack;
+.front-page{
+    .sec-title{
+        text-align: center;
+        font-size: 30px;
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            width: 55px;
+            height: 3px;
+            transform: translateX(-50%);
+            background: $cBlack;
+        }
+        @include mq(){
+            font-size: 48px;
+            margin-bottom: 80px;
+        }
     }
 }
-.s-container{
+.sec-container{
     @include mq(){
         display: flex;
-        gap: 10%;
+        gap: 50px;
     }
-    .s-txt,.s-img{
+    .sec-txt{
         @include mq(){
             width: 50%;
-            margin-top: 50px;
         }
     }
-    .s-img{
+    .sec-img{
         margin-bottom: 40px;
+        @include mq(){
+            width: 50%;
+            margin-bottom: 0px;
+        }
+        & img{
+            height: 100%;
+        }
     }
 
-    .s-txt{
-        & :nth-child(1){
+    .sec-txt{
+        .sec-txt__head{
             font-weight: bold;
             margin-bottom: 20px;
+            @include mq(){
+                font-size: 24px;
+            }
         }
-        & :nth-child(2){
+        .sec-txt__txt{
             margin-bottom: 30px;
+            @include mq(){
+                font-size: 20px;
+            }
         }
-        & :nth-child(3){
+        .sec-txt__btn{
             display: inline-block;
             background: $cMain;
             color: white;
-            padding: 1rem 2rem;
+            padding: .5rem 2rem;
+            @include mq(){
+                font-size: 20px;
+            }
         }
     }
 }
@@ -103,23 +125,24 @@ section{
  ==========================================================================================*/
 .about{
     line-height: 1.7;
-    .s-container{
+    .sec-container{
         flex-direction: row-reverse;
     }
-    .s-img{
-        padding-top: 3rem;
-        @include mq(){
-            padding-top: 0rem;
+    // .sec-img{
+    //     padding-top: 3rem;
+    //     @include mq(){
+    //         padding-top: 0rem;
 
-        }
-    }
+    //     }
+    // }
 }
 
 /* service
  ==========================================================================================*/
 .service{
     background: #BFDBF4;
-    .s-txt{
+    padding-bottom: 100px;
+    .sec-txt{
         padding: 1rem;
 
     }
@@ -148,7 +171,7 @@ section{
     display: inline-block;
     background: $cMain;
     color: white;
-    padding: 1rem 2.5rem;
+    padding: .5rem 1.5rem;
     position: relative;
     left: 50%;
     transform: translateX(-50%);

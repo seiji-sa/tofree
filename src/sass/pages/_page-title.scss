@@ -1,5 +1,5 @@
 @use 'globals' as *;
-.page__title{
+.page-title{
     margin-top: 80px;
     display: flex;
     justify-content: center;
@@ -8,7 +8,7 @@
     padding: 2rem;
     color: $cWhite;
     font-size: 32px;
-    background: url(../../../img/AdobeStock_463369910.png) no-repeat center / 100vw;
+    background: url(../../img/AdobeStock_463369910.png) no-repeat center / 100vw;
     @include mq(){
         font-size: 48px;
 

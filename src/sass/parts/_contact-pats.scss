@@ -7,38 +7,73 @@
     margin: 0 auto;
     background: $cMain;
     color: #fff;
-    padding-bottom: 1.5rem;
+    padding: 2rem;
     position: relative;
-    .sec-title{
+    .contact-sec-title{
+        text-align: center;
+        font-size: 30px;
+        position: relative;
         &::before{
-            background: $cWhite !important;
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            width: 55px;
+            height: 3px;
+            transform: translateX(-50%);
+            background: $cWhite;
         }
     }
-    .c-container{
+    .contact-container{
         text-align: center;
         background: #fff;
         padding: 2rem;
        max-width: 600px;
-        margin: 20px 1rem 0;
-        @include mq(){
-            display: flex;
-            margin: 20px auto 0;
-        justify-content: space-around;
-
+       margin: 20px auto 0;
+       @include mq(){
+           display: flex;
+           margin: 20px auto 0;
+           justify-content: space-around;
+           align-items: center;
         }
-        .c-txt{
+        .contact__txt{
             color: #000;
+            margin-bottom: 15px;
+            @include mq(){
+                margin-bottom: 0;
+            }
         }
-        .c-btn{
+        .contact__txt-tel{
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            font-size: 20px;
+            @include mq(){
+                font-size: 24px;
+            }
+            .tel-icon img{
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        .contact-txt-small{
+            font-size: 14px;
+        }
+        .contact__btn{
            background: $cBlack;
             color: white;
-            padding: 1rem 2.5rem;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            font-size: 20px;
+            height: 50px;
+            width: 220px;
+            margin: 0 auto;
+            @include mq(){
+                margin: 0;
+
+            }
         }
     }
 }
 
-.footer-def{
-    @include mq(){
-        margin-top: 0px !important;
-    }
-}

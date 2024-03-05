@@ -1,5 +1,5 @@
 @use 'globals' as *;
-.f-header{
+.header{
     display: flex;
     z-index: 10;
     position: absolute;
@@ -13,6 +13,14 @@
     height: 80px;
     & ul{
         display: none;
+    }
+    .header__logo a{
+        display: flex;
+        gap: 5px;
+        letter-spacing: 3px;
+        & p{
+            font-size: 1.5rem;
+        }
     }
     @include mq(){
         .menu{

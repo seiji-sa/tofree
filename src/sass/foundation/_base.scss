@@ -4,11 +4,12 @@ a{
 
 img{
     width: 100%;
+    object-fit: cover;
 }
 
 
 *{
-    // outline: 1px solid red;
+    outline: 1px solid red;
 }
 
 html{

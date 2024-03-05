@@ -11,15 +11,20 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../dist/css/style.css" />
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" defer/>
-    <script type="text/javascript"src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
-    <script src="../node_modules/jquery/dist/jquery.js"></script>
-    <script src="../dist/js/script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header>
-      <div class="f-header">
-        <h1 class="logo"><a href="front-page.html">TOFREE</a></h1>
+      <div class="header">
+        <h1 class="header__logo">
+          <a href="front-page.html">
+            <img src="../img/Logo.png" alt="">
+            <p>TOFREE<br>consulting</p>
+          </a>
+        </h1>
         <ul class="h-list">
           <li class="h-list__item"><a href="about.html">about</a></li>
           <li class="h-list__item"><a href="service.html">service</a></li>
@@ -31,50 +36,56 @@
         </div>
       </div>
     </header>
-    <main>
-      <div class="wrap">
-        <div class="container">
-          <h2 class="title">お問い合わせ</h2>
-          <form action="#" method="post">
-            <dt>
-              <label for="name">お名前</label>
-            </dt>
-            <dd>
-              <input type="text" />
-            </dd>
-            <dt>
-              <label for="hurigana">フリガナ</label>
-            </dt>
-            <dd>
-              <input type="text" />
-            </dd>
-            <dt>
-              <label for="mail">メールアドレス</label>
-            </dt>
-            <dd>
-              <input type="text" />
-            </dd>
-            <dt>
-              <label for="message">お問い合わせ内容</label>
-            </dt>
-            <dd>
-              <textarea name="message"></textarea>
-            </dd>
-            <div class="sub-btn">
-              <input type="submit" value="送信する" />
-            </div>
-          </form>
-        </div>
+    <main class="contact-page">
+      <div class="contact-wrap">
+        <h2 class="contact-page__title">お問い合わせ</h2>
+        <form action="#" method="post">
+          <dt>
+            <label for="name">お名前</label>
+          </dt>
+          <dd>
+            <input type="text" />
+          </dd>
+          <dt>
+            <label for="hurigana">フリガナ</label>
+          </dt>
+          <dd>
+            <input type="text" />
+          </dd>
+          <dt>
+            <label for="mail">メールアドレス</label>
+          </dt>
+          <dd>
+            <input type="text" />
+          </dd>
+          <dt>
+            <label for="message">お問い合わせ内容</label>
+          </dt>
+          <dd>
+            <textarea name="message"></textarea>
+          </dd>
+          <div class="sub-btn">
+            <input type="submit" value="送信する" />
+          </div>
+        </form>
       </div>
     </main>
-    <footer class="footer contact-footer">
-      <div class="f-logo">TOFREE</div>
-      <ul class="f-list">
-        <li class="f-list__item"><a href="about.html">about</a></li>
-            <li class="f-list__item"><a href="service.html">service</a></li>
-            <li class="f-list__item"><a href="archive.html">news</a></li>
-            <li class="f-list__item"><a href="contact.html">contact</a></li>
+    <footer class="footer contact-page-footer">
+      <div class="footer__logo">
+          <a href="front-page.html">
+            <img src="../img/Logo.png" alt="">
+            <p>TOFREE<br>consulting</p>
+          </a>
+       </div>
+      <ul class="footer-list">
+        <li class="footer-list__item"><a href="about.html">about</a></li>
+        <li class="footer-list__item"><a href="service.html">service</a></li>
+        <li class="footer-list__item"><a href="archive.html">news</a></li>
+        <li class="footer-list__item"><a href="contact.html">contact</a></li>
       </ul>
     </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="../node_modules/jquery/dist/jquery.js"></script>
+  <script src="../dist/js/script.js"></script>
   </body>
 </html>

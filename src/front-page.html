@@ -13,22 +13,18 @@
     <link rel="stylesheet" href="../dist/css/style.css" />
     <link
       rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-      defer
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-      defer
-    ></script>
-    <script src="../node_modules/jquery/dist/jquery.js"></script>
-    <script src="../dist/js/script.js" defer></script>
   </head>
   <body>
     <header>
-      <div class="f-header">
-        <h1 class="logo"><a href="front-page.html">TOFREE</a></h1>
+      <div class="header">
+        <h1 class="header__logo">
+          <a href="front-page.html">
+            <img src="../img/Logo.png" alt="">
+            <p>TOFREE<br>consulting</p>
+          </a>
+        </h1>
         <ul class="h-list">
           <li class="h-list__item"><a href="about.html">about</a></li>
           <li class="h-list__item"><a href="service.html">service</a></li>
@@ -40,7 +36,7 @@
         </div>
       </div>
     </header>
-    <main>
+    <main class="front-page">
       <div class="hero">
         <div class="l-wrapper">
           <div class="hero__txt">
@@ -59,38 +55,38 @@
       </div>
       <section id="about" class="about">
         <h2 class="sec-title">about</h2>
-        <div class="l-wrapper s-container">
-          <div class="s-img">
+        <div class="l-wrapper sec-container">
+          <div class="sec-img">
             <img src="../img/AdobeStock_463369910.png" alt="" />
           </div>
-          <div class="s-txt">
-            <p>
+          <div class="sec-txt">
+            <p class="sec-txt__head">
               東フリコンサルはクライアントと<br />
               二人三脚でのお仕事を徹底しています。
             </p>
-            <p>
+            <p class="sec-txt__txt">
               プロジェクトに必要なスキルセットを持つフリーランスプロフェッショナルを厳選し、貴社のビジョンを実現するお手伝いをします。
             </p>
-            <p><a href="#">私たちについてもっと詳しく ></a></p>
+            <a class="sec-txt__btn" href="#">私たちについてもっと詳しく ></a>
           </div>
         </div>
       </section>
       <section id="service" class="service">
         <h2 class="sec-title">service</h2>
-        <div class="l-wrapper s-container">
-          <div class="s-img">
+        <div class="l-wrapper sec-container">
+          <div class="sec-img">
             <img src="../img/AdobeStock_463369910.png" alt="" />
           </div>
-          <div class="s-txt">
-            <p>
-              貴社の必要とする人材を見極め<br />
+          <div class="sec-txt">
+            <p class="sec-txt__head">
+              貴社の必要とす人材を見極め<br />
               効率の良い事業運営をお助けします。
             </p>
-            <p>
+            <p class="sec-txt__txt">
               プロジェクトに必要なスキルを持つフリーランス専門家をご紹介。
               柔軟なリソース活用とコスト効率を実現します。
             </p>
-            <p><a href="#">サービスについてもっと詳しく ></a></p>
+            <a class="sec-txt__btn" href="#">サービスについてもっと詳しく ></a>
           </div>
         </div>
       </section>
@@ -101,7 +97,15 @@
             <li class="news__item">
               <a href="#"
                 ><span class="news__item_date">2023 09 01</span>
-                <p news__item_txt>
+                <p class="news__item_txt">
+                  フリーランスサポートに向けた新サービスの開始について
+                </p>
+              </a>
+            </li>
+            <li class="news__item">
+              <a href="#"
+                ><span class="news__item_date">2023 09 01</span>
+                <p class="news__item_txt">
                   フリーランスサポートに向けた新サービスの開始について
                 </p></a
               >
@@ -109,15 +113,7 @@
             <li class="news__item">
               <a href="#"
                 ><span class="news__item_date">2023 09 01</span>
-                <p news__item_txt>
-                  フリーランスサポートに向けた新サービスの開始について
-                </p></a
-              >
-            </li>
-            <li class="news__item">
-              <a href="#"
-                ><span class="news__item_date">2023 09 01</span>
-                <p news__item_txt>
+                <p class="news__item_txt">
                   フリーランスサポートに向けた新サービスの開始について
                 </p></a
               >
@@ -128,24 +124,32 @@
       </section>
 
       <section id="contact" class="contact">
-        <h2 class="sec-title">contact</h2>
-        <div class="c-container">
-          <div class="c-txt">
-            <p class="tel">📞05-1234-5678</p>
-            <p>お気軽にご相談ください</p>
+        <h2 class="contact-sec-title">contact</h2>
+        <div class="contact-container">
+          <div class="contact__txt">
+            <p class="contact__txt-tel"><span class="tel-icon"><img src="../img/uil_phone.png" alt="電話アイコン"></span>05-1234-5678</p>
+            <p class="contact-txt-small">お気軽にご相談ください</p>
           </div>
-          <div class="c-btn"><a href="#">お問い合わせ</a></div>
+          <div class="contact__btn"><a href="#">お問い合わせ</a></div>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <div class="f-logo">TOFREE</div>
-      <ul class="f-list">
-        <li class="f-list__item"><a href="about.html">about</a></li>
-        <li class="f-list__item"><a href="service.html">service</a></li>
-        <li class="f-list__item"><a href="archive.html">news</a></li>
-        <li class="f-list__item"><a href="contact.html">contact</a></li>
+      <div class="footer__logo">
+          <a href="front-page.html">
+            <img src="../img/Logo.png" alt="">
+            <p>TOFREE<br>consulting</p>
+          </a>
+       </div>
+      <ul class="footer-list">
+        <li class="footer-list__item"><a href="about.html">about</a></li>
+        <li class="footer-list__item"><a href="service.html">service</a></li>
+        <li class="footer-list__item"><a href="archive.html">news</a></li>
+        <li class="footer-list__item"><a href="contact.html">contact</a></li>
       </ul>
     </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="../node_modules/jquery/dist/jquery.js"></script>
+  <script src="../dist/js/script.js"></script>
   </body>
 </html>

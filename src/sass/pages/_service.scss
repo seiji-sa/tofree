@@ -1,10 +1,7 @@
 @use './globals' as *;
 
 .cando, .reason, .case{
-    & h3{
-        font-size: 24px;
-        padding: 3rem;
-    }
+
     & h4{
         font-size: 20px;
     }
@@ -12,11 +9,20 @@
         font-size: 16px;
     }
 }
+.sec-title{
+    font-size: 24px;
+    padding: 3rem;
+}
+
+// cando
+// =======================================
 .cando-list{
     .cando-item{
         margin-bottom: 30px;
         @include mq(){
+            position: relative;
             margin-bottom: 120px;
+            height: 500px;
             &:nth-child(1){
                 flex-direction: row-reverse;
             }
@@ -29,15 +35,43 @@
         background: lightblue;
         padding: 2rem 2rem 60px;
         @include mq(){
+            height: 100%;
             width: 100%;
+            padding-left: 50%;
+            margin-top: 140px;
            & br{
             display: none;
            }
         }
-        & h4{
+        .cando__txt-head{
+            margin-bottom: 20px;
+            @include mq(){
+                margin-top: 140px;
+            }
+        }
+        .cando__txt-txt{
             margin-bottom: 20px;
         }
-        & p{
+    }
+    .cando__txt-left{
+        background: lightblue;
+        padding: 2rem 2rem 60px;
+        @include mq(){
+            height: 100%;
+            width: 100%;
+            padding-right: 50%;
+            margin-top: 140px;
+           & br{
+            display: none;
+           }
+        }
+        .cando__txt-head{
+            margin-bottom: 20px;
+            @include mq(){
+                margin-top: 140px;
+            }
+        }
+        .cando__txt-txt{
             margin-bottom: 20px;
         }
     }
@@ -45,31 +79,41 @@
         width: 60%;
         margin-top: -60px;
         z-index: 2;
-
         & img{
             @include mq(){
-                // aspect-ratio:  3/ 4;
-                // width: 50%;
-                // position: absolute;
-                // top: -300px;
-                // left: 0;
+                width: 424px;
+                height: 492px;
+                position: absolute;
+                bottom: 60px;
+                left: 0px;
             }
         }
     }
     .cando__img_right{
         margin-left: auto;
+        & img{
+            @include mq(){
+                width: 424px;
+                height: 492px;
+                position: absolute;
+                bottom: 60px;
+                right: 0px;
+            }
+        }
     }
 }
+// reason
+// =======================================
 
 .reason{
-    background: lightblue;
+    background: rgba($color: #BFDBF4, $alpha: .3);
     .reason-list{
-        max-width: 980px;
         margin: 0 auto;
         padding: 1rem;
+        max-width: 980px;
         @include mq(){
             display: flex;
-            gap: 8%;
+            gap: 4%;
         }
         .reason__item{
             margin-bottom: 30px;
@@ -125,8 +169,21 @@
     width: 300px;
   }
 
-  .swiper-button-next.s-next-btn::after{
-    content: "next";
-    width: 10px;
+  .swiper-button-next.s-next-btn::after,.swiper-button-prev.s-prev-btn::after{
+    content: "";
+    width: 30px;
+    height: 30px;
     color: black;
+    background: url(../../../img/swiper-btn-next.png) no-repeat center center/ contain;
+  }
+
+  .swiper{
+    position: relative;
+  }
+  .swiper-btn-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+
   }

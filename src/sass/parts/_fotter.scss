@@ -8,10 +8,41 @@
         margin-top: -70px;
         z-index: -1;
     }
-    .f-list{
-        margin-top: 2rem;
+    .footer__logo a{
         display: flex;
+        gap: 5px;
         justify-content: center;
-        gap: 10%;
+        margin: 0 auto;
+        letter-spacing: 3px;
+        height: 57px;
+        width: 80px;
+        & p{
+            font-size: 1.5rem;
+        }
+    }
+    .footer-list{
+        font-size: 20px;
+        gap: 40%;
+        width: fit-content;
+        column-gap: 2em;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        margin: 35px auto 0;
+        @include mq(){
+            font-size: 24px;
+            display: flex;
+        }
+    }
+
+}
+
+.contact-page-footer{
+    margin-top: 0px !important;
+    padding: 40px 0 !important;
+    @include mq(){
+        padding: 54px 70px !important;
+
     }
 }
+
+

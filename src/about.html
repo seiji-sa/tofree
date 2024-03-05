@@ -11,24 +11,17 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../dist/css/style.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-      defer
-    />
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-      defer
-    ></script>
-    <script src="../node_modules/jquery/dist/jquery.js"></script>
-    <script src="../dist/js/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   </head>
   <body>
     <header>
-      <div class="f-header">
-        <h1 class="logo"><a href="front-page.html">TOFREE</a></h1>
+      <div class="header">
+        <h1 class="header__logo">
+          <a href="front-page.html">
+            <img src="../img/Logo.png" alt="">
+            <p>TOFREE<br>consulting</p>
+          </a>
+        </h1>
         <ul class="h-list">
           <li class="h-list__item"><a href="about.html">about</a></li>
           <li class="h-list__item"><a href="service.html">service</a></li>
@@ -40,36 +33,16 @@
         </div>
       </div>
     </header>
-    <main>
-      <h2 class="page__title">About</h2>
+    <main class="about-page">
+      <h2 class="page-title">About</h2>
       <section id="philosophy" class="philosophy">
-        <h3>企業理念</h3>
-        <div class="circle-items l-wrapper">
-          <div class="circle__item">
-            <h4>クライアント思考</h4>
-            <p>
-              クライアントの成功を<br />
-              最優先に考える
-            </p>
-          </div>
-          <div class="circle__item">
-            <h4>革新と成長</h4>
-            <p>
-              常に新しいアイデアを<br />
-              追求し成長する
-            </p>
-          </div>
-          <div class="circle__item">
-            <h4>専門知識と洞察力</h4>
-            <p>
-              専門知識と洞察力を用<br />
-              いて問題の根本に迫る
-            </p>
-          </div>
+        <h3 class="sec-title">企業理念</h3>
+        <div class="l-wrapper">
+          <img src="../img/misson-items.png" alt="クライアント思考・革新と成長・専門知識と洞察力の３つの画像">
         </div>
       </section>
       <section id="greeting" class="greeting">
-        <h3>代表挨拶</h3>
+        <h3 class="sec-title">代表挨拶</h3>
         <div class="l-wrapper greeting-container">
           <div class="greeting-img">
             <img src="../img/AdobeStock_463369910.png" alt="" />
@@ -82,7 +55,7 @@
         </div>
       </section>
       <section id="profile" class="profile">
-        <h3>会社概要</h3>
+        <h3 class="sec-title">会社概要</h3>
         <div class="l-wrapper profile-container">
           <table>
             <tbody>
@@ -115,24 +88,32 @@
         </div>
       </section>
       <section id="contact" class="contact">
-        <h2 class="sec-title">contact</h2>
-        <div class="c-container">
-          <div class="c-txt">
-            <p class="tel">05-1234-5678</p>
-            <p>お気軽にご相談ください</p>
+        <h2 class="contact-sec-title">contact</h2>
+        <div class="contact-container">
+          <div class="contact__txt">
+            <p class="contact__txt-tel"><span class="tel-icon"><img src="../img/uil_phone.png" alt="電話アイコン"></span>05-1234-5678</p>
+            <p class="contact-txt-small">お気軽にご相談ください</p>
           </div>
-          <div class="c-btn"><a href="#">お問い合わせ</a></div>
+          <div class="contact__btn"><a href="#">お問い合わせ</a></div>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <div class="f-logo">TOFREE</div>
-      <ul class="f-list">
-        <li class="f-list__item"><a href="about.html">about</a></li>
-        <li class="f-list__item"><a href="service.html">service</a></li>
-        <li class="f-list__item"><a href="archive.html">news</a></li>
-        <li class="f-list__item"><a href="contact.html">contact</a></li>
+      <div class="footer__logo">
+          <a href="front-page.html">
+            <img src="../img/Logo.png" alt="">
+            <p>TOFREE<br>consulting</p>
+          </a>
+       </div>
+      <ul class="footer-list">
+        <li class="footer-list__item"><a href="about.html">about</a></li>
+        <li class="footer-list__item"><a href="service.html">service</a></li>
+        <li class="footer-list__item"><a href="archive.html">news</a></li>
+        <li class="footer-list__item"><a href="contact.html">contact</a></li>
       </ul>
     </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="../node_modules/jquery/dist/jquery.js"></script>
+  <script src="../dist/js/script.js"></script>
   </body>
 </html>

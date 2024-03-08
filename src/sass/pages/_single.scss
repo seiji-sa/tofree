@@ -1,7 +1,7 @@
 @use './globals' as *;
 
 
-.news-detail{
+.detail-page{
     max-width: 800px;
     margin: 0 auto;
     padding: 1rem;
@@ -35,7 +35,7 @@
         font-size: 20px;
     }
 }
-.s-p-list__item{
+.detail-page__item{
     margin-bottom: 40px;
     & h3{
         font-size: 20px;

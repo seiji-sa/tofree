@@ -25,7 +25,7 @@
 
 }
 .news-page{
-    & h3{
+    .news-page__title{
         font-size: 24px;
         margin: 30px 0;
     }
@@ -35,25 +35,25 @@
     & p{
         margin-bottom: 10px;
     }
-    .a-p__item{
+    .news-page__item{
         margin-bottom: 60px;
     }
 }
 
-.a-p-list{
-    .a-p__item > a{
+.news-page__list{
+    .news-page__item > a{
         @include mq(){
             display: flex;
             gap: 30px;
             margin-bottom: 30px;
         }
 
-        .a-p-img{
+        .news-page__item-img{
             @include mq(){
                 width: 40%;
             }
         }
-        .a-p-txt{
+        .news-page__item-txt{
             @include mq(){
                 width: 60%;
             }

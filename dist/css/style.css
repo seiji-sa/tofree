@@ -68,7 +68,7 @@ section {
 .front-page .sec-title::before {
   content: "";
   position: absolute;
-  top: 100%;
+  top: 70%;
   left: 50%;
   width: 55px;
   height: 3px;
@@ -246,10 +246,32 @@ section {
   max-width: 500px;
   margin: 0 auto;
 }
+@media screen and (max-width: 835px) {
+  .profile .profile-container tr {
+    border: solid 1px rgba(0, 0, 0, 0.2);
+  }
+}
 .profile .profile-container th,
 .profile .profile-container td {
-  border: solid 1px;
+  border: solid 1px rgba(0, 0, 0, 0.2);
   padding: 1rem;
+}
+@media screen and (max-width: 835px) {
+  .profile .profile-container th,
+  .profile .profile-container td {
+    border: solid 0px rgba(0, 0, 0, 0.2);
+    display: block;
+  }
+}
+@media screen and (max-width: 835px) {
+  .profile .profile-container th {
+    padding: 10px 10px 0;
+  }
+}
+@media screen and (max-width: 835px) {
+  .profile .profile-container td {
+    padding: 0 10px 10px;
+  }
 }
 .profile .profile-container table {
   width: 100%;
@@ -294,7 +316,7 @@ section {
 .cando-list .cando-item {
   margin-bottom: 30px;
 }
-@media screen and (min-width: 835px) {
+@media screen and (min-width: 1085px) {
   .cando-list .cando-item {
     position: relative;
     margin-bottom: 120px;
@@ -311,7 +333,7 @@ section {
   background: lightblue;
   padding: 2rem 2rem 60px;
 }
-@media screen and (min-width: 835px) {
+@media screen and (min-width: 1085px) {
   .cando-list .cando__txt {
     height: 100%;
     width: 100%;
@@ -325,7 +347,7 @@ section {
 .cando-list .cando__txt .cando__txt-head {
   margin-bottom: 20px;
 }
-@media screen and (min-width: 835px) {
+@media screen and (min-width: 1085px) {
   .cando-list .cando__txt .cando__txt-head {
     margin-top: 140px;
   }
@@ -337,7 +359,7 @@ section {
   background: lightblue;
   padding: 2rem 2rem 60px;
 }
-@media screen and (min-width: 835px) {
+@media screen and (min-width: 1085px) {
   .cando-list .cando__txt-left {
     height: 100%;
     width: 100%;
@@ -351,7 +373,7 @@ section {
 .cando-list .cando__txt-left .cando__txt-head {
   margin-bottom: 20px;
 }
-@media screen and (min-width: 835px) {
+@media screen and (min-width: 1085px) {
   .cando-list .cando__txt-left .cando__txt-head {
     margin-top: 140px;
   }
@@ -364,7 +386,7 @@ section {
   margin-top: -60px;
   z-index: 2;
 }
-@media screen and (min-width: 835px) {
+@media screen and (min-width: 1085px) {
   .cando-list .cando__img img {
     width: 424px;
     height: 492px;
@@ -379,7 +401,7 @@ section {
   z-index: 2;
   margin-left: auto;
 }
-@media screen and (min-width: 835px) {
+@media screen and (min-width: 1085px) {
   .cando-list .cando__img_right img {
     width: 424px;
     height: 492px;
@@ -467,12 +489,13 @@ section {
 }
 
 .swiper-btn-container {
+  background: #000;
   position: absolute;
   top: 0;
   left: 0;
 }
 
-.news-detail {
+.detail-page {
   max-width: 800px;
   margin: 0 auto;
   padding: 1rem;
@@ -514,10 +537,10 @@ section {
   }
 }
 
-.s-p-list__item {
+.detail-page__item {
   margin-bottom: 40px;
 }
-.s-p-list__item h3 {
+.detail-page__item h3 {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 20px;
@@ -526,11 +549,11 @@ section {
   padding-left: 1rem;
 }
 @media screen and (min-width: 835px) {
-  .s-p-list__item h3 {
+  .detail-page__item h3 {
     font-size: 28px;
   }
 }
-.s-p-list__item p {
+.detail-page__item p {
   font-size: 16px;
 }
 
@@ -572,7 +595,7 @@ section {
   }
 }
 
-.news-page h3 {
+.news-page .news-page__title {
   font-size: 24px;
   margin: 30px 0;
 }
@@ -582,24 +605,24 @@ section {
 .news-page p {
   margin-bottom: 10px;
 }
-.news-page .a-p__item {
+.news-page .news-page__item {
   margin-bottom: 60px;
 }
 
 @media screen and (min-width: 835px) {
-  .a-p-list .a-p__item > a {
+  .news-page__list .news-page__item > a {
     display: flex;
     gap: 30px;
     margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 835px) {
-  .a-p-list .a-p__item > a .a-p-img {
+  .news-page__list .news-page__item > a .news-page__item-img {
     width: 40%;
   }
 }
 @media screen and (min-width: 835px) {
-  .a-p-list .a-p__item > a .a-p-txt {
+  .news-page__list .news-page__item > a .news-page__item-txt {
     width: 60%;
   }
 }
@@ -1312,10 +1335,6 @@ a {
 img {
   width: 100%;
   object-fit: cover;
-}
-
-* {
-  outline: 1px solid red;
 }
 
 html {

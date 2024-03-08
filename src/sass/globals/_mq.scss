@@ -1,10 +1,11 @@
 $breakpoints :(
     'xl': 'screen and (min-width: 1200px)',
     // ノートPC
-    // 'l2': 'screen and (min-width: 950px)',
+    'l2': 'screen and (min-width: 1085px)',
     'l': 'screen and (min-width: 900px)',
     // タブレット
     'md': 'screen and (min-width: 835px)',
+    'table': 'screen and (max-width: 835px)',
     // スマホ
     's': 'screen and (min-width: 500px)'
 )!default;

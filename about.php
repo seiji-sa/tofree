@@ -1,4 +1,4 @@
-<?php 'get_header'(); ?>
+<?php get_header(); ?>
 
 <main class="about-page">
   <h2 class="page-title">About</h2>
@@ -65,4 +65,4 @@
     </div>
   </section>
 </main>
-<?php 'get_footer'(); ?>
+<?php get_footer(); ?>

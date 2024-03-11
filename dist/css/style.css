@@ -2,7 +2,7 @@
 /* hero
  ==========================================================================================*/
 .hero {
-  background: url(../../img/AdobeStock_463369910.png) no-repeat center/auto;
+  background: url(../../img/FV-img.png) no-repeat center/100vw 100%;
 }
 .hero .hero__txt {
   padding: 10rem 0;
@@ -885,7 +885,7 @@ a {
   height: 100%;
   object-fit: contain;
 }
-.contact .contact-container .contact-txt-small {
+.contact .contact-container .contact__txt-small {
   font-size: 14px;
 }
 .contact .contact-container .contact__btn {

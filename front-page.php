@@ -20,7 +20,7 @@
     <h2 class="sec-title">about</h2>
     <div class="l-wrapper sec-container">
       <div class="sec-img">
-        <img src="../img/AdobeStock_463369910.png" alt="" />
+        <img src="../img/AdobeStock_463369910.png" alt="" width="550" height="354">
       </div>
       <div class="sec-txt">
         <p class="sec-txt__head">
@@ -84,11 +84,11 @@
   </section>
 
   <section id="contact" class="contact">
-    <h2 class="contact-sec-title">contact</h2>
+    <h2 class="contact__sec-title">contact</h2>
     <div class="contact-container">
       <div class="contact__txt">
         <p class="contact__txt-tel"><span class="tel-icon"><img src="../img/uil_phone.png" alt="電話アイコン"></span>05-1234-5678</p>
-        <p class="contact-txt-small">お気軽にご相談ください</p>
+        <p class="contact__txt-small">お気軽にご相談ください</p>
       </div>
       <div class="contact__btn"><a href="#">お問い合わせ</a></div>
     </div>

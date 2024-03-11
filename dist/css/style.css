@@ -831,12 +831,12 @@ a {
   padding: 2rem;
   position: relative;
 }
-.contact .contact-sec-title {
+.contact .contact__sec-title {
   text-align: center;
   font-size: 30px;
   position: relative;
 }
-.contact .contact-sec-title::before {
+.contact .contact__sec-title::before {
   content: "";
   position: absolute;
   top: 100%;

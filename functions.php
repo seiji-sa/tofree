@@ -39,8 +39,8 @@ function post_has_archive($args, $post_type)
  */
 function my_script_init()
 {
-    wp_enqueue_style('my-css', get_template_directory_uri() . '/dist/css/style.css');
-    wp_enqueue_script('my-js', get_template_directory_uri() . '/dist/js/script.js');
-    wp_enqueue_style('my-img', get_template_directory_uri() . '/img');
+    wp_enqueue_style('my-css', get_stylesheet_directory_uri() . '/dist/css/style.css');
+    wp_enqueue_script('my-js', get_stylesheet_directory_uri() . '/dist/js/script.js');
+    wp_enqueue_style('my-img', get_stylesheet_directory_uri() . '/img/Logo.png');
 }
 'add_action'('wp_enqueue_scripts', 'my_script_init');

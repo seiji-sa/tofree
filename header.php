@@ -18,7 +18,7 @@
         <div class="header">
             <h1 class="header__logo">
                 <a href="front-page.html">
-                    <img src="../img/Logo.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/Logo.png" alt="">
                     <p>TOFREE<br>consulting</p>
                 </a>
             </h1>

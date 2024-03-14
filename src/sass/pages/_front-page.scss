@@ -7,7 +7,7 @@
     background: url(../../img/FV-img.png)  no-repeat center / 100vw 100%;
     .hero__txt{
         padding: 10rem 0;
-        .hero__txt_left{
+        .hero__txt--left{
             line-height: 2;
             font-size: 40px;
             text-align: left;
@@ -17,7 +17,7 @@
                 font-size: 60px;
             }
         }
-        .hero__txt_right{
+        .hero__txt--right{
             color: rgba($color: #fff, $alpha: .5);
             text-align: center;
             text-wrap: wrap;
@@ -30,7 +30,7 @@
         }
     }
 
-    .btn-contact{
+    .hero__txt--left--btn{
         display: inline-block;
         background: $cMain;
         color: white;

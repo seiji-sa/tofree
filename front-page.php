@@ -3,14 +3,14 @@
   <div class="hero">
     <div class="l-wrapper">
       <div class="hero__txt">
-        <div class="hero__txt_left">
+        <div class="hero__txt--left">
           <p>ビジョン実現の</p>
           <p>パートナー</p>
-          <div class="btn-contact">
+          <div class="hero__txt--left--btn">
             <a href="contact.html">contact</a>
           </div>
         </div>
-        <div class="hero__txt_right">
+        <div class="hero__txt--right">
           <p>CONSULTING</p>
         </div>
       </div>

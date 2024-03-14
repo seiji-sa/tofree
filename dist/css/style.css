@@ -7,7 +7,7 @@
 .hero .hero__txt {
   padding: 10rem 0;
 }
-.hero .hero__txt .hero__txt_left {
+.hero .hero__txt .hero__txt--left {
   line-height: 2;
   font-size: 40px;
   text-align: left;
@@ -15,23 +15,23 @@
   margin-bottom: 8rem;
 }
 @media screen and (min-width: 835px) {
-  .hero .hero__txt .hero__txt_left {
+  .hero .hero__txt .hero__txt--left {
     font-size: 60px;
   }
 }
-.hero .hero__txt .hero__txt_right {
+.hero .hero__txt .hero__txt--right {
   color: rgba(255, 255, 255, 0.5);
   text-align: center;
   text-wrap: wrap;
   font-size: 36px;
 }
 @media screen and (min-width: 835px) {
-  .hero .hero__txt .hero__txt_right {
+  .hero .hero__txt .hero__txt--right {
     text-align: right;
     font-size: 6.5rem;
   }
 }
-.hero .btn-contact {
+.hero .hero__txt--left--btn {
   display: inline-block;
   background: #3B41DA;
   color: white;
@@ -41,7 +41,7 @@
   font-size: 24px;
 }
 @media screen and (min-width: 835px) {
-  .hero .btn-contact {
+  .hero .hero__txt--left--btn {
     padding: 14px 44px;
     font-size: 36px;
   }

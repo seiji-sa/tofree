@@ -36,12 +36,13 @@
 
 }
 
-.contact-page-footer{
-    margin-top: 0px !important;
-    padding: 40px 0 !important;
-    @include mq(){
-        padding: 54px 70px !important;
-
+.contact-page__footer{
+    .footer{
+        margin-top: 0px !important;
+        padding: 40px 0 !important;
+        @include mq(){
+            padding: 54px 70px !important;
+        }
     }
 }
 

@@ -945,12 +945,12 @@ a {
   }
 }
 
-.contact-page-footer {
+.contact-page__footer .footer {
   margin-top: 0px !important;
   padding: 40px 0 !important;
 }
 @media screen and (min-width: 835px) {
-  .contact-page-footer {
+  .contact-page__footer .footer {
     padding: 54px 70px !important;
   }
 }

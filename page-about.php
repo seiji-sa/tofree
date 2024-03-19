@@ -5,14 +5,14 @@
   <section id="philosophy" class="philosophy">
     <h3 class="sec-title">企業理念</h3>
     <div class="l-wrapper">
-      <img src="../img/misson-items.png" alt="クライアント思考・革新と成長・専門知識と洞察力の３つの画像">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/misson-items.png" alt="クライアント思考・革新と成長・専門知識と洞察力の３つの画像">
     </div>
   </section>
   <section id="greeting" class="greeting">
     <h3 class="sec-title">代表挨拶</h3>
     <div class="l-wrapper greeting-container">
       <div class="greeting-img">
-        <img src="../img/AdobeStock_463369910.png" alt="" />
+        <img src="<?php echo get_template_directory_uri(); ?>/img/AdobeStock_463369910.png" alt="" />
       </div>
       <div class="greeting-txt">
         <p>
@@ -55,11 +55,11 @@
     </div>
   </section>
   <section id="contact" class="contact">
-    <h2 class="contact-sec-title">contact</h2>
+    <h2 class="contact__sec-title">contact</h2>
     <div class="contact-container">
       <div class="contact__txt">
-        <p class="contact__txt-tel"><span class="tel-icon"><img src="../img/uil_phone.png" alt="電話アイコン"></span>05-1234-5678</p>
-        <p class="contact-txt-small">お気軽にご相談ください</p>
+        <p class="contact__txt-tel"><span class="tel-icon"><img src="<?php echo get_template_directory_uri(); ?>/img/uil_phone.png" alt="電話アイコン"></span>05-1234-5678</p>
+        <p class="contact__txt-small">お気軽にご相談ください</p>
       </div>
       <div class="contact__btn"><a href="#">お問い合わせ</a></div>
     </div>

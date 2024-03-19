@@ -20,7 +20,7 @@
             </p>
           </div>
           <div class="cando__img">
-            <img src="../img/AdobeStock_463369910.png" alt="" />
+            <img src="<?php echo get_template_directory_uri(); ?>/img/AdobeStock_463369910.png" alt="" />
           </div>
         </li>
         <li class="cando-item">
@@ -36,7 +36,7 @@
             </p>
           </div>
           <div class="cando__img_right">
-            <img src="../img/AdobeStock_463369910.png" alt="" />
+            <img src="<?php echo get_template_directory_uri(); ?>/img/AdobeStock_463369910.png" alt="" />
           </div>
         </li>
         <li class="cando-item">
@@ -52,7 +52,7 @@
             </p>
           </div>
           <div class="cando__img">
-            <img src="../img/AdobeStock_463369910.png" alt="" />
+            <img src="<?php echo get_template_directory_uri(); ?>/img/AdobeStock_463369910.png" alt="" />
           </div>
         </li>
       </ul>
@@ -63,7 +63,7 @@
     <ul class="reason-list">
       <li class="reason__item">
         <div class="reason-img">
-          <img src="../img/AdobeStock_463369910.png" alt="" />
+          <img src="<?php echo get_template_directory_uri(); ?>/img/AdobeStock_463369910.png" alt="" />
         </div>
         <div class="reason__txt">
           <h4 class="reason__txt-head">専門知識とネットワーク</h4>
@@ -75,7 +75,7 @@
       </li>
       <li class="reason__item">
         <div class="reason-img">
-          <img src="../img/AdobeStock_463369910.png" alt="" />
+          <img src="<?php echo get_template_directory_uri(); ?>/img/AdobeStock_463369910.png" alt="" />
         </div>
         <div class="reason__txt">
           <h4 class="reason__txt-head">時間と労力の節約</h4>
@@ -87,7 +87,7 @@
       </li>
       <li class="reason__item">
         <div class="reason-img">
-          <img src="../img/AdobeStock_463369910.png" alt="" />
+          <img src="<?php echo get_template_directory_uri(); ?>/img/AdobeStock_463369910.png" alt="" />
         </div>
         <div class="reason__txt">
           <h4 class="reason__txt-head">多様なスキルセットの提供</h4>
@@ -130,13 +130,11 @@
     </div>
   </section>
   <section id="contact" class="contact">
-    <h2 class="contact-sec-title">contact</h2>
+    <h2 class="contact__sec-title">contact</h2>
     <div class="contact-container">
       <div class="contact__txt">
-        <p class="contact__txt-tel">
-          <span class="tel-icon"><img src="../img/uil_phone.png" alt="電話アイコン" /></span>05-1234-5678
-        </p>
-        <p class="contact-txt-small">お気軽にご相談ください</p>
+        <p class="contact__txt-tel"><span class="tel-icon"><img src="<?php echo get_template_directory_uri(); ?>/img/uil_phone.png" alt="電話アイコン"></span>05-1234-5678</p>
+        <p class="contact__txt-small">お気軽にご相談ください</p>
       </div>
       <div class="contact__btn"><a href="#">お問い合わせ</a></div>
     </div>

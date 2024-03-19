@@ -34,4 +34,6 @@
     </form>
   </div>
 </main>
-<?php 'get_footer'(); ?>
+<div class="contact-page__footer">
+  <?php 'get_footer'(); ?>
+</div>

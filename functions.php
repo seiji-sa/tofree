@@ -22,7 +22,7 @@ function my_setup()
 'add_action'('after_setup_theme', 'my_setup');
 
 // ワードプレス管理バー非表示
-// add_filter('show_admin_bar', '__return_false');
+add_filter('show_admin_bar', '__return_false');
 
 // 投稿のアーカイブページを作成する
 function post_has_archive($args, $post_type)

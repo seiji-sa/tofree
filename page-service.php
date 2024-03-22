@@ -101,33 +101,12 @@
   </section>
   <section id="case" class="case">
     <h3 class="sec-title">導入事例</h3>
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="../img/AdobeStock_463369910.png" alt="" />
-        </div>
-        <div class="swiper-slide">
-          <img src="../img/AdobeStock_463369910.png" alt="" />
-        </div>
-        <div class="swiper-slide">
-          <img src="../img/AdobeStock_463369910.png" alt="" />
-        </div>
-        <div class="swiper-slide">
-          <img src="../img/AdobeStock_463369910.png" alt="" />
-        </div>
-        <div class="swiper-slide">
-          <img src="../img/AdobeStock_463369910.png" alt="" />
-        </div>
-        <div class="swiper-slide">
-          <img src="../img/AdobeStock_463369910.png" alt="" />
-        </div>
-      </div>
-      <div class="swiper-btn-container">
-        <div class="swiper-button-next s-next-btn"></div>
-        <div class="swiper-button-prev s-prev-btn"></div>
-        <div class="swiper-pagination"></div>
-      </div>
-    </div>
+    <ul class="slider">
+      <li> <img src="<?php echo get_template_directory_uri(); ?>/img/AdobeStock_463369910.png" alt="" /></li>
+      <li> <img src="<?php echo get_template_directory_uri(); ?>/img/AdobeStock_463369910.png" alt="" /></li>
+      <li> <img src="<?php echo get_template_directory_uri(); ?>/img/AdobeStock_463369910.png" alt="" /></li>
+      <li> <img src="<?php echo get_template_directory_uri(); ?>/img/AdobeStock_463369910.png" alt="" /></li>
+    </ul>
   </section>
   <section id="contact" class="contact">
     <h2 class="contact__sec-title">contact</h2>
@@ -136,7 +115,7 @@
         <p class="contact__txt-tel"><span class="tel-icon"><img src="<?php echo get_template_directory_uri(); ?>/img/uil_phone.png" alt="電話アイコン"></span>05-1234-5678</p>
         <p class="contact__txt-small">お気軽にご相談ください</p>
       </div>
-      <div class="contact__btn"><a href="#">お問い合わせ</a></div>
+      <div class="contact__btn"><a href="<?php echo 'home_url'('/'); ?>contact">お問い合わせ</a></div>
     </div>
   </section>
 </main>

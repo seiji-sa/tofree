@@ -65,9 +65,9 @@
             @include mq(){
                 width: 100%;
             }
-            .news-page__item-txt > h2 , p:not(p:nth-child(4)), .wp-block-heading {
-                display: none;
-             }
+            // .news-page__item-txt > h2 , p:not(p:nth-child(4)), .wp-block-heading {
+            //     display: none;
+            //  }
         }
     }
 }

@@ -1,227 +1,207 @@
-@use './globals' as *;
+@use "./globals" as *;
 
-.cando, .reason, .case{
-
-    & h4{
-        font-size: 20px;
-    }
-    & p{
-        font-size: 16px;
-    }
+.cando,
+.reason,
+.case {
+  & h4 {
+    font-size: 20px;
+  }
+  & p {
+    font-size: 16px;
+  }
 }
-.sec-title{
-    font-size: 24px;
-    padding: 3rem;
+.sec-title {
+  font-size: 24px;
+  padding: 3rem;
 }
 
 // cando
 // =======================================
-.cado-wrapper{
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0;
+.cado-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0;
 }
-.cando-list{
-    .cando-item{
-        margin-bottom: 30px;
-        @include mq(l2){
-            position: relative;
-            margin-bottom: 120px;
-            height: 500px;
-            &:nth-child(1){
-                flex-direction: row-reverse;
-            }
-            &:nth-child(3){
-                flex-direction: row-reverse;
-            }
-        }
+.cando-list {
+  .cando-item {
+    margin-bottom: 30px;
+    @include mq(l2) {
+      position: relative;
+      margin-bottom: 120px;
+      height: 500px;
+      &:nth-child(1) {
+        flex-direction: row-reverse;
+      }
+      &:nth-child(3) {
+        flex-direction: row-reverse;
+      }
     }
-    .cando__txt{
-        background: lightblue;
-        padding: 2rem 2rem 60px;
-        @include mq(l2){
-            height: 100%;
-            width: 100%;
-            padding-left: 50%;
-            margin-top: 140px;
-           & br{
-            display: none;
-           }
-        }
-        .cando__txt-head{
-            margin-bottom: 20px;
-            @include mq(l2){
-                margin-top: 140px;
-            }
-        }
-        .cando__txt-txt{
-            margin-bottom: 20px;
-        }
+  }
+  .cando__txt {
+    background: lightblue;
+    padding: 2rem 2rem 60px;
+    @include mq(l2) {
+      height: 100%;
+      width: 100%;
+      padding-left: 50%;
+      margin-top: 140px;
+      & br {
+        display: none;
+      }
     }
-    .cando__txt-left{
-        background: lightblue;
-        padding: 2rem 2rem 60px;
-        @include mq(l2){
-            height: 100%;
-            width: 100%;
-            padding-right: 50%;
-            margin-top: 140px;
-           & br{
-            display: none;
-           }
-        }
-        .cando__txt-head{
-            margin-bottom: 20px;
-            @include mq(l2){
-                margin-top: 140px;
-            }
-        }
-        .cando__txt-txt{
-            margin-bottom: 20px;
-        }
+    .cando__txt-head {
+      margin-bottom: 20px;
+      @include mq(l2) {
+        margin-top: 140px;
+      }
     }
-    .cando__img{
-        width: 60%;
-        margin-top: -60px;
-        z-index: 2;
-        & img{
-            @include mq(l2){
-                width: 424px;
-                height: 492px;
-                position: absolute;
-                bottom: 60px;
-                left: -60px;
-            }
-        }
+    .cando__txt-txt {
+      margin-bottom: 20px;
     }
-    .cando__img_right{
-        width: 60%;
-        margin-top: -60px;
-        z-index: 2;
-        margin-left: auto;
-        & img{
-            @include mq(l2){
-                width: 424px;
-                height: 492px;
-                position: absolute;
-                bottom: 60px;
-                right: -60px;
-            }
-        }
+  }
+  .cando__txt-left {
+    background: lightblue;
+    padding: 2rem 2rem 60px;
+    @include mq(l2) {
+      height: 100%;
+      width: 100%;
+      padding-right: 50%;
+      margin-top: 140px;
+      & br {
+        display: none;
+      }
     }
+    .cando__txt-head {
+      margin-bottom: 20px;
+      @include mq(l2) {
+        margin-top: 140px;
+      }
+    }
+    .cando__txt-txt {
+      margin-bottom: 20px;
+    }
+  }
+  .cando__img {
+    width: 60%;
+    margin-top: -60px;
+    z-index: 2;
+    & img {
+      @include mq(l2) {
+        width: 424px;
+        height: 492px;
+        position: absolute;
+        bottom: 60px;
+        left: -60px;
+      }
+    }
+  }
+  .cando__img_right {
+    width: 60%;
+    margin-top: -60px;
+    z-index: 2;
+    margin-left: auto;
+    & img {
+      @include mq(l2) {
+        width: 424px;
+        height: 492px;
+        position: absolute;
+        bottom: 60px;
+        right: -60px;
+      }
+    }
+  }
 }
 // reason
 // =======================================
 
-.reason{
-    background: rgba($color: #BFDBF4, $alpha: .3);
-    .reason-list{
-        margin: 0 auto;
-        padding: 1rem;
-        max-width: 980px;
-        @include mq(){
-            display: flex;
-            gap: 4%;
-        }
-        .reason__item{
-            margin-bottom: 30px;
-            text-align: center;
-            & img{
-                border-radius: 50%;
-                margin-bottom: 30px;
-                width: 250px;
-                height: 250px;
-            }
-            & h4{
-                text-align: center;
-                margin-bottom: 30px;
-
-            }
-            & p{
-                text-align: left;
-            }
-        }
+.reason {
+  background: rgba($color: #bfdbf4, $alpha: 0.3);
+  .reason-list {
+    margin: 0 auto;
+    padding: 1rem;
+    max-width: 980px;
+    @include mq() {
+      display: flex;
+      gap: 4%;
     }
-
+    .reason__item {
+      margin-bottom: 30px;
+      text-align: center;
+      & img {
+        border-radius: 50%;
+        margin-bottom: 30px;
+        width: 250px;
+        height: 250px;
+      }
+      & h4 {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      & p {
+        text-align: left;
+      }
+    }
+  }
 }
-/*==================================================
-スライダーのためのcss
-===================================*/
-.slider {/*横幅94%で左右に余白を持たせて中央寄せ*/
-    width:94%;
-    margin:0 auto;
-}
+// /*==================================================
+// スライダーのためのcss
+// ===================================*/
+// .slider {
+//   /*横幅94%で左右に余白を持たせて中央寄せ*/
+//   width: 94%;
+//   margin: 0 auto;
+// }
 
-.slider img {
-    width:60vw;/*スライダー内の画像を60vwにしてレスポンシブ化*/
-    height:auto;
-}
+// .slider img {
+//   width: 60vw; /*スライダー内の画像を60vwにしてレスポンシブ化*/
+//   height: auto;
+// }
 
-.slider .slick-slide {
-  transform: scale(0.8);/*左右の画像のサイズを80%に*/
-  transition: all .5s;/*拡大や透過のアニメーションを0.5秒で行う*/
-  opacity: 0.5;/*透過50%*/
-}
+// .slider .slick-slide {
+//   transform: scale(0.8); /*左右の画像のサイズを80%に*/
+//   transition: all 0.5s; /*拡大や透過のアニメーションを0.5秒で行う*/
+//   opacity: 0.5; /*透過50%*/
+// }
 
-.slider .slick-slide.slick-center{
-  transform: scale(1);/*中央の画像のサイズだけ等倍に*/
-  opacity: 1;/*透過なし*/
-}
+// .slider .slick-slide.slick-center {
+//   transform: scale(1); /*中央の画像のサイズだけ等倍に*/
+//   opacity: 1; /*透過なし*/
+// }
 
-
-/*矢印の設定*/
+// /*矢印の設定*/
 
 /*戻る、次へ矢印の位置*/
-.slick-prev,
-.slick-next {
-    position: absolute;/*絶対配置にする*/
-    top: 42%;
-    cursor: pointer;/*マウスカーソルを指マークに*/
-    outline: none;/*クリックをしたら出てくる枠線を消す*/
-    border-top: 2px solid #666;/*矢印の色*/
-    border-right: 2px solid #666;/*矢印の色*/
-    height: 15px;
-    width: 15px;
+// .slick-prev,
+// .slick-next {
+//   position: absolute; /*絶対配置にする*/
+//   top: 42%;
+//   cursor: pointer; /*マウスカーソルを指マークに*/
+//   outline: none; /*クリックをしたら出てくる枠線を消す*/
+//   border-top: 2px solid #666; /*矢印の色*/
+//   border-right: 2px solid #666; /*矢印の色*/
+//   height: 15px;
+//   width: 15px;
+// }
+.slider{
+    width: 80vw;
+    margin: 0 auto;
+}
+.slick-prev {
+  /*戻る矢印の位置と形状*/
+  left: -1.5%;
+  transform: rotate(-135deg);
 }
 
-.slick-prev {/*戻る矢印の位置と形状*/
-    left: -1.5%;
-    transform: rotate(-135deg);
-}
+.slick-active button {
+    background: #3598da;
+  }
 
-.slick-next {/*次へ矢印の位置と形状*/
-    right: -1.5%;
-    transform: rotate(45deg);
-}
-
-/*ドットナビゲーションの設定*/
-
-.slick-dots {
-    text-align:center;
-  margin:20px 0 0 0;
-}
-
-.slick-dots li {
-    display:inline-block;
-  margin:0 5px;
-}
-
-.slick-dots button {
-    color: transparent;
-    outline: none;
-    width:8px;/*ドットボタンのサイズ*/
-    height:8px;/*ドットボタンのサイズ*/
-    display:block;
-    border-radius:50%;
-    background:#ccc;/*ドットボタンの色*/
-}
-
-.slick-dots .slick-active button{
-    background:#333;/*ドットボタンの現在地表示の色*/
-}
-
-
-
-
-
-
+  .slick-slide.slick-center {
+    transform: scale(1);
+    opacity: 1;
+  }
+  .slick-slide {
+    transform: scale(0.8);
+    transition: all 0.3s;
+    opacity: 0.3;
+  }

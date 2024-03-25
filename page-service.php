@@ -101,12 +101,23 @@
   </section>
   <section id="case" class="case">
     <h3 class="sec-title">導入事例</h3>
-    <ul class="slider">
-      <li> <img src="<?php echo get_template_directory_uri(); ?>/img/AdobeStock_463369910.png" alt="" /></li>
-      <li> <img src="<?php echo get_template_directory_uri(); ?>/img/AdobeStock_463369910.png" alt="" /></li>
-      <li> <img src="<?php echo get_template_directory_uri(); ?>/img/AdobeStock_463369910.png" alt="" /></li>
-      <li> <img src="<?php echo get_template_directory_uri(); ?>/img/AdobeStock_463369910.png" alt="" /></li>
-    </ul>
+    <div class="slider">
+      <div class="slider-item">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/AdobeStock_463369910.png" alt="" />
+      </div>
+      <div class="slider-item">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/AdobeStock_463369910.png" alt="" />
+      </div>
+      <div class="slider-item">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/AdobeStock_463369910.png" alt="" />
+      </div>
+      <div class="slider-item">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/AdobeStock_463369910.png" alt="" />
+      </div>
+      <div class="slider-item">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/AdobeStock_463369910.png" alt="" />
+      </div>
+    </div>
   </section>
   <section id="contact" class="contact">
     <h2 class="contact__sec-title">contact</h2>

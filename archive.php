@@ -14,7 +14,20 @@
                 <h4 class="archive post-title"><?php the_title(); ?></h4>
                 <p class="archive post-date"><?php echo get_the_date('Y.m.d'); ?></p>
                 <p class="archive post-txt">
-                  <?php the_content(); ?>
+                  <?php
+                  global $post; // $post変数をグローバルスコープから取得
+
+                  // 投稿の本文を取得
+                  $post_content = $post->post_content;
+
+                  if (mb_strlen($post_content, 'UTF-8') > 100) {
+                    $content = mb_substr(strip_tags($post_content), 0, 100, 'UTF-8');
+                    echo $content . '…';
+                  } else {
+                    echo strip_tags($post_content);
+                  }
+                  ?>
+
                 </p>
               </div>
             </a>

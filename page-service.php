@@ -104,18 +104,27 @@
     <div class="slider">
       <div class="slider-item">
         <img src="<?php echo get_template_directory_uri(); ?>/img/AdobeStock_463369910.png" alt="" />
+        <p class="slider-item__company-name">グローバルテック・サービス株式会社</p>
       </div>
       <div class="slider-item">
         <img src="<?php echo get_template_directory_uri(); ?>/img/AdobeStock_463369910.png" alt="" />
+        <p class="slider-item__company-name">グローバルテック・サービス株式会社2</p>
+
       </div>
       <div class="slider-item">
         <img src="<?php echo get_template_directory_uri(); ?>/img/AdobeStock_463369910.png" alt="" />
+        <p class="slider-item__company-name">グローバルテック・サービス株式会社3</p>
+
       </div>
       <div class="slider-item">
         <img src="<?php echo get_template_directory_uri(); ?>/img/AdobeStock_463369910.png" alt="" />
+        <p class="slider-item__company-name">グローバルテック・サービス株式会社4</p>
+
       </div>
       <div class="slider-item">
         <img src="<?php echo get_template_directory_uri(); ?>/img/AdobeStock_463369910.png" alt="" />
+        <p class="slider-item__company-name">グローバルテック・サービス株式会社5</p>
+
       </div>
     </div>
   </section>

@@ -146,62 +146,63 @@
 // /*==================================================
 // スライダーのためのcss
 // ===================================*/
-// .slider {
-//   /*横幅94%で左右に余白を持たせて中央寄せ*/
-//   width: 94%;
-//   margin: 0 auto;
-// }
 
-// .slider img {
-//   width: 60vw; /*スライダー内の画像を60vwにしてレスポンシブ化*/
-//   height: auto;
-// }
+.case{
+  margin-bottom: 120px;
 
-// .slider .slick-slide {
-//   transform: scale(0.8); /*左右の画像のサイズを80%に*/
-//   transition: all 0.5s; /*拡大や透過のアニメーションを0.5秒で行う*/
-//   opacity: 0.5; /*透過50%*/
-// }
-
-// .slider .slick-slide.slick-center {
-//   transform: scale(1); /*中央の画像のサイズだけ等倍に*/
-//   opacity: 1; /*透過なし*/
-// }
-
-// /*矢印の設定*/
-
-/*戻る、次へ矢印の位置*/
-// .slick-prev,
-// .slick-next {
-//   position: absolute; /*絶対配置にする*/
-//   top: 42%;
-//   cursor: pointer; /*マウスカーソルを指マークに*/
-//   outline: none; /*クリックをしたら出てくる枠線を消す*/
-//   border-top: 2px solid #666; /*矢印の色*/
-//   border-right: 2px solid #666; /*矢印の色*/
-//   height: 15px;
-//   width: 15px;
-// }
+}
 .slider{
-    width: 80vw;
-    margin: 0 auto;
-}
-.slick-prev {
-  /*戻る矢印の位置と形状*/
-  left: -1.5%;
-  transform: rotate(-135deg);
-}
-
-.slick-active button {
-    background: #3598da;
+  position: relative;
+  .slick-arrow{
+    cursor: pointer; /*マウスカーソルを指マークに*/
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 104%;
+    z-index: 999;
+    &.slick-prev{
+      left: 42%;
+      background: url(../../img/slide-arrow.png) no-repeat 100% 100%;
+    }
+    &.slick-next{
+      left: 56%;
+      background: url(../../img/swiper-btn-next.png) no-repeat 100% 100%;
+    }
   }
 
-  .slick-slide.slick-center {
-    transform: scale(1);
-    opacity: 1;
+}
+
+.slick-dots li button {
+  display: block;
+  width: 10px !important;
+  height: 10px !important;
+  margin: 6px;
+  font-size: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  background: gray !important;
+  border-radius: 50%;
+}
+.slick-dots .slick-active button {
+  background: black !important;
+}
+
+.slick-slide.slick-center {
+  transform: scale(1);
+  .slider-item__company-name {
+    display: block !important;
   }
-  .slick-slide {
-    transform: scale(0.8);
-    transition: all 0.3s;
-    opacity: 0.3;
-  }
+}
+.slick-slide {
+  transform: scale(0.5);
+  transition: all 0.3s;
+}
+
+.slider-item__company-name {
+  text-align: center;
+  font-size: 24px;
+  margin: 30px 0 30px;
+  display: none;
+}

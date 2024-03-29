@@ -1,84 +1,73 @@
-@use './globals' as *;
+@use "./globals" as *;
 
-
-.detail-page{
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 1rem;
-    margin-top: 80px;
-    .size-post-thumbnail{
-        height: 200px;
-        width: 100%;
-        @include mq(){
-            height: 330px;
-        }
+.detail-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+  margin-top: 80px;
+  .size-post-thumbnail {
+    height: 200px;
+    width: 100%;
+    @include mq() {
+      height: 330px;
     }
+  }
 }
 
-.post-date{
-    margin: 20px 0;
-    font-size: 14px;
-    @include mq(){
-        font-size: 20px;
-    }
+.detail-page__post-date {
+  margin: 20px 0;
+  font-size: 14px;
+  @include mq() {
+    font-size: 20px;
+  }
 }
 
-.post-title{
-    font-size: 24px;
+.detail-page__post-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  @include mq() {
+    font-size: 30px;
+  }
+}
+
+.detail__post--txt {
+  font-size: 14px;
+  & p:nth-child(1) {
+    margin-top: 20px;
+  }
+  @include mq() {
+    font-size: 20px;
+  }
+  .wp-block-heading {
+    font-size: 20px;
     font-weight: bold;
-    margin-bottom: 20px;
-    @include mq(){
-        font-size: 30px;
+    text-align: left;
+    border-left: 5px solid #000;
+    padding-left: 1rem;
+    margin-top: 40px;
+    @include mq() {
+      font-size: 28px;
+      margin-top: 60px;
+      &:nth-of-type(1) {
+        margin-top: 50px;
+      }
     }
+  }
 }
 
-.post-img{
-    margin-bottom: 20px;
-}
-.detail__post--txt{
-    font-size: 14px;
-    margin-bottom: 20px;
-    @include mq(){
-        font-size: 20px;
-    }
-    .wp-block-heading{
-        font-size: 20px;
-            font-weight: bold;
-            margin-bottom: 20px;
-            text-align: left;
-            border-left: 5px solid #000;
-            padding-left: 1rem;
-            @include mq(){
-                font-size: 28px;
-            }
-    }
-}
-.detail-page__item{
-    margin-bottom: 40px;
-    // & h3{
-    //     font-size: 20px;
-    //     font-weight: bold;
-    //     margin-bottom: 20px;
-    //     text-align: left;
-    //     border-left: 5px solid #000;
-    //     padding-left: 1rem;
-    //     @include mq(){
-    //         font-size: 28px;
-    //     }
-    // }
-    & p{
-        font-size: 16px;
-    }
-}
-
-
-.post-btn_back{
-    margin: 0 auto;
-    width: 200px;
-    height: 80px;
-    background: #839CF2;
-    font-size: 24px;
-    display: grid;
-    place-items: center;
-    margin-bottom: 40px;
+.detail-page__post-btn--back {
+  margin: 40px auto 50px;
+  width: 166px;
+  height: 46px;
+  background: #839cf2;
+  font-size: 18px;
+  display: grid;
+  place-items: center;
+  @include mq() {
+      margin: 60px auto 100px;
+      font-size: 24px;
+      width: 200px;
+  height: 80px;
+  }
 }

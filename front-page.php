@@ -72,14 +72,14 @@
     </div>
   </section>
 
-  <section id="contact" class="contact">
-    <h2 class="contact__sec-title">contact</h2>
-    <div class="contact-container">
-      <div class="contact__txt">
-        <p class="contact__txt-tel"><span class="tel-icon"><img src="<?php echo get_template_directory_uri(); ?>/img/uil_phone.png" alt="電話アイコン"></span>05-1234-5678</p>
-        <p class="contact__txt-small">お気軽にご相談ください</p>
+  <section id="sec-contact" class="sec-contact">
+    <h2 class="sec-contact__title">contact</h2>
+    <div class="sec-contact__container">
+      <div class="sec-contact__txt">
+        <p class="sec-contact__txt--tel"><span class="tel-icon"><img src="<?php echo get_template_directory_uri(); ?>/img/uil_phone.png" alt="電話アイコン"></span>05-1234-5678</p>
+        <p class="sec-contact__txt--small">お気軽にご相談ください</p>
       </div>
-      <div class="contact__btn"><a href="<?php echo 'home_url'('/'); ?>contact">お問い合わせ</a></div>
+      <div class="sec-contact__btn"><a href="<?php echo 'home_url'('/'); ?>contact">お問い合わせ</a></div>
     </div>
   </section>
 </main>

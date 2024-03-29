@@ -151,43 +151,26 @@
   margin-bottom: 120px;
 
 }
-.slider{
-  position: relative;
-  .slick-arrow{
-    cursor: pointer; /*マウスカーソルを指マークに*/
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    top: 104%;
-    z-index: 999;
-    &.slick-prev{
-      left: 42%;
-      background: url(../../img/slide-arrow.png) no-repeat 100% 100%;
-    }
-    &.slick-next{
-      left: 56%;
-      background: url(../../img/swiper-btn-next.png) no-repeat 100% 100%;
-    }
+
+.slick-dots{
+  li button {
+    display: block;
+    width: 10px !important;
+    height: 10px !important;
+    margin: 6px;
+    font-size: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    background: gray !important;
+    border-radius: 50%;
   }
-
+  .slick-active button {
+    background: black !important;
+  }
 }
 
-.slick-dots li button {
-  display: block;
-  width: 10px !important;
-  height: 10px !important;
-  margin: 6px;
-  font-size: 0;
-  padding: 0;
-  border: 0;
-  outline: none;
-  cursor: pointer;
-  background: gray !important;
-  border-radius: 50%;
-}
-.slick-dots .slick-active button {
-  background: black !important;
-}
 
 .slick-slide.slick-center {
   transform: scale(1);
@@ -205,4 +188,26 @@
   font-size: 24px;
   margin: 30px 0 30px;
   display: none;
+}
+
+.slider{
+  position: relative;
+  .slick-arrow{
+    cursor: pointer; /*マウスカーソルを指マークに*/
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 100%;
+    left: 50%;
+    z-index: 999;
+    &.slick-prev{
+      background: url(../../img/slide-arrow.png) no-repeat 100% 100%;
+      transform: translate(-300%,-10%);
+    }
+    &.slick-next{
+      background: url(../../img/swiper-btn-next.png) no-repeat 100% 100%;
+      transform: translate(200%,-10%);
+    }
+  }
+
 }

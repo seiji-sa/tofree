@@ -10,46 +10,44 @@
             <a href="<?php echo 'home_url'('/'); ?>contact">contact</a>
           </div>
         </div>
-        <div class="hero__txt--right">
-          <p>CONSULTING</p>
-        </div>
+        <p class="hero__txt--right">CONSULTING</p>
       </div>
     </div>
   </div>
   <section id="about" class="about">
     <h2 class="sec-title">about</h2>
     <div class="l-wrapper sec-container">
-      <div class="sec-img">
+      <div class="sec-container__img">
         <img src="<?php echo get_template_directory_uri(); ?>/img/AdobeStock_463369910.png" alt="" width="550" height="354">
       </div>
-      <div class="sec-txt">
-        <p class="sec-txt__head">
+      <div class="sec-container__txt">
+        <p class="sec-container__txt--head">
           東フリコンサルはクライアントと<br />
           二人三脚でのお仕事を徹底しています。
         </p>
-        <p class="sec-txt__txt">
+        <p class="sec-container__txt--foot">
           プロジェクトに必要なスキルセットを持つフリーランスプロフェッショナルを厳選し、貴社のビジョンを実現するお手伝いをします。
         </p>
-        <a class="sec-txt__btn" href="<?php echo 'home_url'('/'); ?>about">私たちについてもっと詳しく ></a>
+        <a class="sec-container__txt--btn" href="<?php echo 'home_url'('/'); ?>about">私たちについてもっと詳しく ></a>
       </div>
     </div>
   </section>
   <section id="service" class="service">
     <h2 class="sec-title">service</h2>
     <div class="l-wrapper sec-container">
-      <div class="sec-img">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/AdobeStock_463369910.png" alt="" />
+      <div class="sec-container__img">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/AdobeStock_463369910.png" alt="" width="550" height="354">
       </div>
-      <div class="sec-txt">
-        <p class="sec-txt__head">
+      <div class="sec-container__txt">
+        <p class="sec-container__txt--head">
           貴社の必要とす人材を見極め<br />
           効率の良い事業運営をお助けします。
         </p>
-        <p class="sec-txt__txt">
+        <p class="sec-container__txt--foot">
           プロジェクトに必要なスキルを持つフリーランス専門家をご紹介。
           柔軟なリソース活用とコスト効率を実現します。
         </p>
-        <a class="sec-txt__btn" href="<?php echo 'home_url'('/'); ?>service">サービスについてもっと詳しく ></a>
+        <a class="sec-container__txt--btn" href="<?php echo 'home_url'('/'); ?>service">サービスについてもっと詳しく ></a>
       </div>
     </div>
   </section>
@@ -59,8 +57,8 @@
       <ul class="news__list">
         <?php if ('have_posts'()) : while ('have_posts'()) : the_post(); ?>
             <li class="news__item">
-              <a href="<?php 'the_permalink'(); ?>"><span class="news__item_date"><?php echo get_the_date('Y.m.d'); ?></span>
-                <p class="news__item_txt">
+              <a href="<?php 'the_permalink'(); ?>"><span class="news__item--date"><?php echo get_the_date('Y.m.d'); ?></span>
+                <p class="news__item--txt">
                   <?php the_title(); ?>
                 </p>
               </a>

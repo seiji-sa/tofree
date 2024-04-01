@@ -3,20 +3,21 @@
  ==========================================================================================*/
 .hero {
   background: url(../../img/FV-img.png) no-repeat center/100vw 100%;
+  margin-bottom: 0px;
 }
 .hero .hero__txt {
-  padding: 10rem 0;
+  padding: 5.7rem 0;
 }
 .hero .hero__txt .hero__txt--left {
-  line-height: 2;
+  margin: 6.5rem 0 2rem;
   font-size: 40px;
   text-align: left;
   color: white;
-  margin-bottom: 8rem;
 }
 @media screen and (min-width: 835px) {
   .hero .hero__txt .hero__txt--left {
     font-size: 60px;
+    margin: 6.5rem 0 2rem;
   }
 }
 .hero .hero__txt .hero__txt--right {
@@ -29,6 +30,8 @@
   .hero .hero__txt .hero__txt--right {
     text-align: right;
     font-size: 6.5rem;
+    letter-spacing: 8px;
+    padding-bottom: 2rem;
   }
 }
 .hero .hero__txt--left--btn {
@@ -37,27 +40,13 @@
   color: white;
   border-radius: 4rem;
   padding: 10px 30px;
-  margin-top: 5rem;
   font-size: 24px;
 }
 @media screen and (min-width: 835px) {
   .hero .hero__txt--left--btn {
-    padding: 14px 44px;
+    padding: 5px 43px;
     font-size: 36px;
   }
-}
-
-.hero, section {
-  margin-bottom: 30px;
-}
-@media screen and (min-width: 835px) {
-  .hero, section {
-    margin-bottom: 62px;
-  }
-}
-
-section {
-  line-height: 1.7;
 }
 
 .front-page .sec-title {
@@ -78,67 +67,78 @@ section {
 @media screen and (min-width: 835px) {
   .front-page .sec-title {
     font-size: 48px;
-    margin-bottom: 80px;
+    padding: 2.6rem;
+  }
+}
+
+/* section common
+ ==========================================================================================*/
+section {
+  margin: 0px;
+}
+@media screen and (min-width: 835px) {
+  section {
+    margin: 15px 0;
   }
 }
 
 @media screen and (min-width: 835px) {
-  .sec-container {
+  .l-wrapper.sec-container {
     display: flex;
-    gap: 50px;
+    gap: 10%;
+    padding: 2.5rem 1rem 4rem;
+    margin-bottom: 40px;
   }
 }
 @media screen and (min-width: 835px) {
-  .sec-container .sec-txt {
-    width: 50%;
+  .l-wrapper.sec-container .sec-container__txt {
+    width: 40%;
   }
 }
-.sec-container .sec-img {
+.l-wrapper.sec-container .sec-container__img {
   margin-bottom: 40px;
 }
 @media screen and (min-width: 835px) {
-  .sec-container .sec-img {
+  .l-wrapper.sec-container .sec-container__img {
     width: 50%;
     margin-bottom: 0px;
   }
 }
-.sec-container .sec-img img {
+.l-wrapper.sec-container .sec-container__img img {
   height: 100%;
 }
-.sec-container .sec-txt .sec-txt__head {
+.l-wrapper.sec-container .sec-container__txt .sec-container__txt--head {
   font-weight: bold;
   margin-bottom: 20px;
 }
 @media screen and (min-width: 835px) {
-  .sec-container .sec-txt .sec-txt__head {
+  .l-wrapper.sec-container .sec-container__txt .sec-container__txt--head {
+    margin-bottom: 40px;
     font-size: 24px;
   }
 }
-.sec-container .sec-txt .sec-txt__txt {
+.l-wrapper.sec-container .sec-container__txt .sec-container__txt--foot {
   margin-bottom: 30px;
 }
 @media screen and (min-width: 835px) {
-  .sec-container .sec-txt .sec-txt__txt {
+  .l-wrapper.sec-container .sec-container__txt .sec-container__txt--foot {
     font-size: 20px;
   }
 }
-.sec-container .sec-txt .sec-txt__btn {
+.l-wrapper.sec-container .sec-container__txt .sec-container__txt--btn {
   display: inline-block;
   background: #3B41DA;
   color: white;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1rem;
 }
 @media screen and (min-width: 835px) {
-  .sec-container .sec-txt .sec-txt__btn {
+  .l-wrapper.sec-container .sec-container__txt .sec-container__txt--btn {
     font-size: 20px;
   }
 }
 
 /* about
  ==========================================================================================*/
-.about {
-  line-height: 1.7;
-}
 .about .sec-container {
   flex-direction: row-reverse;
 }
@@ -146,18 +146,20 @@ section {
 /* service
  ==========================================================================================*/
 .service {
-  background: #BFDBF4;
-  padding-bottom: 100px;
-}
-.service .sec-txt {
-  padding: 1rem;
+  background: #bfdbf4;
 }
 
 /* news
  ==========================================================================================*/
 .news__list {
-  max-width: 600px;
-  margin: 40px auto 0;
+  max-width: 780px;
+  margin: 50px auto 50px;
+  font-size: 16px;
+}
+@media screen and (min-width: 835px) {
+  .news__list {
+    font-size: 20px;
+  }
 }
 
 .news__item {
@@ -180,6 +182,8 @@ section {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
+  font-size: 20px;
+  font-weight: bold;
 }
 
 /* contact
@@ -746,6 +750,12 @@ input[type=text] {
   height: 2.5rem;
 }
 
+input[type=email] {
+  background: white;
+  width: 100%;
+  height: 2.5rem;
+}
+
 textarea {
   background: white !important;
   width: 100%;
@@ -765,45 +775,43 @@ input[type=submit] {
 }
 
 .l-wrapper {
-  max-width: 960px;
+  max-width: 1124px;
   margin: 0 auto;
   padding: 0 1rem;
 }
 
 .header {
   display: flex;
-  z-index: 10;
-  position: absolute;
+  z-index: 3;
   width: 100%;
-  top: 0;
-  right: 0;
-  z-index: 1;
   justify-content: space-around;
   align-items: center;
   background: rgba(255, 255, 255, 0.8);
   height: 80px;
-}
-.header ul {
-  display: none;
+  gap: 12%;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  position: absolute;
 }
 .header .header__logo a {
   display: flex;
   gap: 5px;
   letter-spacing: 3px;
 }
-.header .header__logo a p {
+.header .header__logo a .header__logo--txt {
   font-size: 1.5rem;
 }
 @media screen and (min-width: 835px) {
   .header .menu {
     display: none;
   }
-  .header ul {
+  .header .header-list {
     display: flex;
     align-items: center;
     gap: 42px;
   }
-  .header ul :nth-child(4) {
+  .header .header-list :nth-child(4) {
     background: #3B41DA;
     color: white;
     border-radius: 2rem;
@@ -1394,15 +1402,12 @@ a:hover {
 
 html {
   scroll-behavior: smooth;
+  font-family: "Noto Serif", serif;
 }
 
 img {
   width: 100%;
   object-fit: cover;
-}
-
-html {
-  font-family: "Noto Serif", serif;
 }
 
 main {

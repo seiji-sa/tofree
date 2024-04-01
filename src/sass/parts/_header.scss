@@ -1,42 +1,39 @@
-@use 'globals' as *;
-.header{
+@use "globals" as *;
+.header {
+  display: flex;
+  z-index: 3;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba($color: $cWhite, $alpha: 0.8);
+  height: 80px;
+  gap: 12%;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  position: absolute;
+  .header__logo a {
     display: flex;
-    z-index: 10;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    right: 0;
-    z-index: 1;
-    justify-content: space-around;
-    align-items: center;
-    background: rgba($color: $cWhite, $alpha: .8);
-    height: 80px;
-    & ul{
-        display: none;
+    gap: 5px;
+    letter-spacing: 3px;
+    .header__logo--txt {
+      font-size: 1.5rem;
     }
-    .header__logo a{
-        display: flex;
-        gap: 5px;
-        letter-spacing: 3px;
-        & p{
-            font-size: 1.5rem;
-        }
+  }
+  @include mq() {
+    .menu {
+      display: none;
     }
-    @include mq(){
-        .menu{
-            display: none;
-        }
-        & ul{
-            display: flex;
-            align-items: center;
-            gap: 42px;
-            & :nth-child(4){
-                background: $cMain;
-                color: white;
-                border-radius: 2rem;
-                padding: .9rem 2.5rem;
-            }
-        }
+    .header-list {
+      display: flex;
+      align-items: center;
+      gap: 42px;
+      & :nth-child(4) {
+        background: $cMain;
+        color: white;
+        border-radius: 2rem;
+        padding: 0.9rem 2.5rem;
+      }
     }
-
+  }
 }

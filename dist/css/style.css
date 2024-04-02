@@ -151,6 +151,15 @@ section {
 
 /* news
  ==========================================================================================*/
+.news {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 835px) {
+  .news {
+    margin-bottom: 120px;
+  }
+}
+
 .news__list {
   max-width: 780px;
   margin: 50px auto 50px;
@@ -164,7 +173,7 @@ section {
 
 .news__item {
   border-bottom: 1px solid #000;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   padding: 5px;
 }
 @media screen and (min-width: 835px) {
@@ -888,17 +897,22 @@ a {
 /* contact
  ==========================================================================================*/
 .sec-contact {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
   background: #3B41DA;
   color: #fff;
-  padding: 1.3rem;
+  padding: 1rem 0 2rem;
   position: relative;
 }
 .sec-contact .sec-contact__title {
   text-align: center;
   font-size: 32px;
   position: relative;
+}
+@media screen and (min-width: 835px) {
+  .sec-contact .sec-contact__title {
+    font-size: 48px;
+  }
 }
 .sec-contact .sec-contact__title::before {
   content: "";
@@ -913,7 +927,7 @@ a {
 .sec-contact .sec-contact__container {
   text-align: center;
   background: #fff;
-  padding: 15px 2rem;
+  padding: 2rem 0rem;
   max-width: 600px;
   margin: 20px auto 25px;
 }
@@ -996,7 +1010,6 @@ a {
 }
 .footer .footer-list {
   font-size: 20px;
-  gap: 40%;
   width: fit-content;
   column-gap: 2em;
   display: grid;
@@ -1005,8 +1018,10 @@ a {
 }
 @media screen and (min-width: 835px) {
   .footer .footer-list {
+    margin: 50px auto 0;
     font-size: 24px;
     display: flex;
+    column-gap: 4em;
   }
 }
 

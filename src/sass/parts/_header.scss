@@ -20,6 +20,9 @@
       font-size: 1.5rem;
     }
   }
+  .header-list {
+    display: none;
+  }
   @include mq() {
     .menu {
       display: none;

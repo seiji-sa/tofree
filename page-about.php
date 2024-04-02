@@ -5,14 +5,14 @@
   <section id="philosophy" class="philosophy">
     <h3 class="sec-title">企業理念</h3>
     <div class="l-wrapper">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/misson-items.png" alt="クライアント思考・革新と成長・専門知識と洞察力の３つの画像">
+      <img class="philosophy-img" src="<?php echo get_template_directory_uri(); ?>/img/misson-items.png" alt="クライアント思考・革新と成長・専門知識と洞察力の３つの画像" width="800" height="721">
     </div>
   </section>
   <section id="greeting" class="greeting">
     <h3 class="sec-title">代表挨拶</h3>
     <div class="l-wrapper greeting-container">
       <div class="greeting-img">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/AdobeStock_463369910.png" alt="" />
+        <img src="<?php echo get_template_directory_uri(); ?>/img/AdobeStock_463369910.png" alt="代表の人物画像" / width="486" height="335">
       </div>
       <div class="greeting-txt">
         <p>
@@ -47,7 +47,7 @@
             <td>100万円</td>
           </tr>
           <tr>
-            <th>成立年月日</th>
+            <th>設立年月日</th>
             <td>2023年1月1日</td>
           </tr>
         </tbody>

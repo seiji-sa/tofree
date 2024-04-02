@@ -7,8 +7,12 @@
   margin: 0 auto;
   background: $cMain;
   color: #fff;
-  padding: 1rem 0 2rem;
+  padding: 1rem 1rem 2rem;
   position: relative;
+  @include mq() {
+    padding: 1rem 0 2rem;
+
+  }
   .sec-contact__title {
     text-align: center;
     font-size: 32px;

@@ -25,12 +25,12 @@
   text-align: center;
   text-wrap: wrap;
   font-size: 36px;
+  letter-spacing: 10px;
 }
 @media screen and (min-width: 835px) {
   .hero .hero__txt .hero__txt--right {
     text-align: right;
     font-size: 6.5rem;
-    letter-spacing: 8px;
     padding-bottom: 2rem;
   }
 }
@@ -130,10 +130,12 @@ section {
   background: #3B41DA;
   color: white;
   padding: 0.5rem 1rem;
+  margin-bottom: 50px;
 }
 @media screen and (min-width: 835px) {
   .l-wrapper.sec-container .sec-container__txt .sec-container__txt--btn {
     font-size: 20px;
+    margin-bottom: 0px;
   }
 }
 
@@ -162,11 +164,12 @@ section {
 
 .news__list {
   max-width: 780px;
-  margin: 50px auto 50px;
+  margin: 0px auto 50px;
   font-size: 16px;
 }
 @media screen and (min-width: 835px) {
   .news__list {
+    margin: 50px auto 50px;
     font-size: 20px;
   }
 }
@@ -218,10 +221,16 @@ section {
 @media screen and (min-width: 835px) {
   .philosophy {
     margin-bottom: 100px;
+    max-width: 800px;
   }
 }
 
-/* philosophy
+.philosophy-img {
+  width: 100%;
+  object-fit: contain;
+}
+
+/* greeting
  ==========================================================================================*/
 .greeting {
   background: rgba(191, 219, 244, 0.3);
@@ -233,7 +242,6 @@ section {
   .greeting .greeting-container {
     display: flex;
     gap: 50px;
-    padding-bottom: 100px;
   }
 }
 .greeting .greeting-img {
@@ -255,9 +263,19 @@ section {
   }
 }
 
+/* profile
+ ==========================================================================================*/
 .profile .profile-container {
   max-width: 500px;
   margin: 0 auto;
+}
+@media screen and (min-width: 835px) {
+  .profile .profile-container {
+    max-width: 700px;
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 70px;
+  }
 }
 @media screen and (max-width: 835px) {
   .profile .profile-container tr {
@@ -811,6 +829,9 @@ input[type=submit] {
 .header .header__logo a .header__logo--txt {
   font-size: 1.5rem;
 }
+.header .header-list {
+  display: none;
+}
 @media screen and (min-width: 835px) {
   .header .menu {
     display: none;
@@ -901,8 +922,13 @@ a {
   margin: 0 auto;
   background: #3B41DA;
   color: #fff;
-  padding: 1rem 0 2rem;
+  padding: 1rem 1rem 2rem;
   position: relative;
+}
+@media screen and (min-width: 835px) {
+  .sec-contact {
+    padding: 1rem 0 2rem;
+  }
 }
 .sec-contact .sec-contact__title {
   text-align: center;
@@ -1427,6 +1453,7 @@ img {
 
 main {
   line-height: 1.7;
+  letter-spacing: 1.5px;
 }
 
 h3 {

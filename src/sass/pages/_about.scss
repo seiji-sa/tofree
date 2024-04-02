@@ -22,7 +22,7 @@
     max-width: 800px;
   }
 }
-.philosophy-img{
+.philosophy__img{
   width: 100%;
   object-fit: contain;
 }
@@ -31,20 +31,20 @@
  ==========================================================================================*/
 .greeting {
   background: rgba($color: #bfdbf4, $alpha: 0.3);
-  .greeting-container {
+  .greeting__container {
     padding-bottom: 50px;
     @include mq() {
       display: flex;
       gap: 50px;
     }
   }
-  .greeting-img {
+  .greeting__img {
     margin-bottom: 20px;
     @include mq() {
       width: 50%;
     }
   }
-  .greeting-txt {
+  .greeting__txt {
     @include mq() {
       height: 300px;
       display: grid;
@@ -60,7 +60,7 @@
  ==========================================================================================*/
 
 .profile {
-  .profile-container {
+  .profile__container {
     max-width: 500px;
     margin: 0 auto;
     @include mq(){

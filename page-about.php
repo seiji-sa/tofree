@@ -5,16 +5,16 @@
   <section id="philosophy" class="philosophy">
     <h3 class="sec-title">企業理念</h3>
     <div class="l-wrapper">
-      <img class="philosophy-img" src="<?php echo get_template_directory_uri(); ?>/img/misson-items.png" alt="クライアント思考・革新と成長・専門知識と洞察力の３つの画像" width="800" height="721">
+      <img class="philosophy__img" src="<?php echo get_template_directory_uri(); ?>/img/misson-items.png" alt="クライアント思考・革新と成長・専門知識と洞察力の３つの画像" width="800" height="721">
     </div>
   </section>
   <section id="greeting" class="greeting">
     <h3 class="sec-title">代表挨拶</h3>
-    <div class="l-wrapper greeting-container">
-      <div class="greeting-img">
+    <div class="l-wrapper greeting__container">
+      <div class="greeting__img">
         <img src="<?php echo get_template_directory_uri(); ?>/img/AdobeStock_463369910.png" alt="代表の人物画像" / width="486" height="335">
       </div>
-      <div class="greeting-txt">
+      <div class="greeting__txt">
         <p>
           私たちの強みは、経験豊かな専門家チームと綿密な調査・分析に基づく戦略立案です。お客様のビジョンと目標を共有し、最適な戦略を共に創り上げます。そして、その戦略を実現に向けてお手伝いし、成功へと導きます。私たちは経営のパートナーとして、お客様の成長と成功を全力でサポートします。協力し、共に目標を達成しましょう。どうぞお気軽にご相談ください。
         </p>
@@ -23,7 +23,7 @@
   </section>
   <section id="profile" class="profile">
     <h3 class="sec-title">会社概要</h3>
-    <div class="l-wrapper profile-container">
+    <div class="l-wrapper profile__container">
       <table>
         <tbody>
           <tr>

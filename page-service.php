@@ -5,13 +5,13 @@
   <section id="cando" class="cando">
     <h3 class="sec-title">私たちができること</h3>
     <div class="cado-wrapper">
-      <ul class="cando-list">
-        <li class="cando-item">
+      <ul class="cando__list">
+        <li class="cando__item">
           <div class="cando__txt">
-            <h4 class="cando__txt-head">
+            <h4 class="cando__txt--head">
               フリーランス人材<br />プラットフォーム提供
             </h4>
-            <p class="cando__txt-txt">
+            <p class="cando__txt--foot">
               フリーランスのプロフィールを集約し、
               クライアント企業に提供する、
               プラットフォームを構築および運営します。
@@ -23,28 +23,28 @@
             <img src="<?php echo get_template_directory_uri(); ?>/img/AdobeStock_463369910.png" alt="" />
           </div>
         </li>
-        <li class="cando-item">
-          <div class="cando__txt-left">
-            <h4 class="cando__txt-head">
+        <li class="cando__item">
+          <div class="cando__txt--left">
+            <h4 class="cando__txt--head">
               適切なフリーランスの<br />選定とマッチング
             </h4>
-            <p class="cando__txt-txt">
+            <p class="cando__txt--foot">
               クライアントのニーズに合った 専門的なフリーランスを選定し、
               プロジェクトに最適な人材をマッチングします。
               <br /><br />スキル、経験、プロジェクトの性質に基づいて
               選定されたフリーランスを提供します。
             </p>
           </div>
-          <div class="cando__img_right">
+          <div class="cando__img--right">
             <img src="<?php echo get_template_directory_uri(); ?>/img/AdobeStock_463369910.png" alt="" />
           </div>
         </li>
-        <li class="cando-item">
+        <li class="cando__item">
           <div class="cando__txt">
-            <h4 class="cando__txt-head">
+            <h4 class="cando__txt--head">
               プロジェクト管理と<br />コーディネーション
             </h4>
-            <p class="cando__txt-txt">
+            <p class="cando__txt--foot">
               業務の進行やコミュニケーションを管理し、
               クライアントとフリーランスの間の 円滑な協力を確保します。
               <br /><br />円滑な業務を進めていくために、
@@ -60,38 +60,38 @@
   </section>
   <section id="reason" class="reason">
     <h3 class="sec-title">私たちが選ばれる理由</h3>
-    <ul class="reason-list">
+    <ul class="reason__list">
       <li class="reason__item">
-        <div class="reason-img">
+        <div class="reason__img">
           <img src="<?php echo get_template_directory_uri(); ?>/img/AdobeStock_463369910.png" alt="" />
         </div>
         <div class="reason__txt">
-          <h4 class="reason__txt-head">専門知識とネットワーク</h4>
-          <p>
+          <h4 class="reason__txt--head">専門知識とネットワーク</h4>
+          <p class="reason__txt--foot">
             私たちは多くのフリーランス専門家との関係を築いており、クライアントに適切な専門家を紹介できる広範なネットワークを持っています。
             このため、専門的なスキルセットを必要とするプロジェクトに最適な人材を提供できます。
           </p>
         </div>
       </li>
       <li class="reason__item">
-        <div class="reason-img">
+        <div class="reason__img">
           <img src="<?php echo get_template_directory_uri(); ?>/img/AdobeStock_463369910.png" alt="" />
         </div>
         <div class="reason__txt">
-          <h4 class="reason__txt-head">時間と労力の節約</h4>
-          <p class="reason__txt-txt">
+          <h4 class="reason__txt--head">時間と労力の節約</h4>
+          <p class="reason__txt--foot">
             私たちはクライアントの代わりにフリーランスのスクリーニング、選定、契約管理を行うため、クライアントは時間と労力を節約できます。
             そのため、プロジェクトの開始までの時間が短縮され、業務の効率が向上します。
           </p>
         </div>
       </li>
       <li class="reason__item">
-        <div class="reason-img">
+        <div class="reason__img">
           <img src="<?php echo get_template_directory_uri(); ?>/img/AdobeStock_463369910.png" alt="" />
         </div>
         <div class="reason__txt">
-          <h4 class="reason__txt-head">多様なスキルセットの提供</h4>
-          <p class="reason__txt-txt">
+          <h4 class="reason__txt--head">多様なスキルセットの提供</h4>
+          <p class="reason__txt--foot">
             私たちは幅広い業界およびスキルセットをカバーし、様々なプロジェクトに対応できる多様なフリーランス専門家を提供します。
             そのため、クライアントは異なるニーズに対応でき、柔軟性を持ったソリューションを得ることができます。
           </p>
@@ -102,28 +102,28 @@
   <section id="case" class="case">
     <h3 class="sec-title">導入事例</h3>
     <div class="slider">
-      <div class="slider-item">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/AdobeStock_463369910.png" alt="" />
-        <p class="slider-item__company-name">グローバルテック・サービス株式会社</p>
+      <div class="slider__item">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/AdobeStock_463369910.png" alt="" / width="300" height="200">
+        <p class="slider__item--name">グローバルテック・サービス株式会社</p>
       </div>
-      <div class="slider-item">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/AdobeStock_463369910.png" alt="" />
-        <p class="slider-item__company-name">グローバルテック・サービス株式会社2</p>
+      <div class="slider__item">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/AdobeStock_463369910.png" alt="" / width="300" height="200">
+        <p class="slider__item--name">グローバルテック・サービス株式会社2</p>
 
       </div>
-      <div class="slider-item">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/AdobeStock_463369910.png" alt="" />
-        <p class="slider-item__company-name">グローバルテック・サービス株式会社3</p>
+      <div class="slider__item">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/AdobeStock_463369910.png" alt="" / width="300" height="200">
+        <p class="slider__item--name">グローバルテック・サービス株式会社3</p>
 
       </div>
-      <div class="slider-item">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/AdobeStock_463369910.png" alt="" />
-        <p class="slider-item__company-name">グローバルテック・サービス株式会社4</p>
+      <div class="slider__item">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/AdobeStock_463369910.png" alt="" / width="300" height="200">
+        <p class="slider__item--name">グローバルテック・サービス株式会社4</p>
 
       </div>
-      <div class="slider-item">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/AdobeStock_463369910.png" alt="" />
-        <p class="slider-item__company-name">グローバルテック・サービス株式会社5</p>
+      <div class="slider__item">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/AdobeStock_463369910.png" alt="" / width="300" height="200">
+        <p class="slider__item--name">グローバルテック・サービス株式会社5</p>
 
       </div>
     </div>

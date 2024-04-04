@@ -1,10 +1,10 @@
 @use "./globals" as *;
 
 .detail-page {
-  max-width: 800px;
+  max-width: 830px;
   margin: 0 auto;
   padding: 1rem;
-  margin-top: 80px;
+  margin-top: 140px;
   .size-post-thumbnail {
     height: 200px;
     width: 100%;
@@ -27,18 +27,23 @@
   font-weight: bold;
   margin-bottom: 20px;
   @include mq() {
-    font-size: 30px;
+    margin-bottom: 10px;
+    font-size: 28px;
   }
 }
 
 .detail__post--txt {
-  font-size: 14px;
-  & p:nth-child(1) {
-    margin-top: 20px;
+  & p{
+    font-size: 14px;
+    @include mq() {
+      font-size: 16px;
+    }
+    &:nth-child(1) {
+      margin-top: 20px;
+      font-size: 20px;
+    }
   }
-  @include mq() {
-    font-size: 20px;
-  }
+
   .wp-block-heading {
     font-size: 20px;
     font-weight: bold;
@@ -48,7 +53,6 @@
     margin-top: 40px;
     @include mq() {
       font-size: 28px;
-      margin-top: 60px;
       &:nth-of-type(1) {
         margin-top: 50px;
       }
@@ -65,9 +69,9 @@
   display: grid;
   place-items: center;
   @include mq() {
-      margin: 60px auto 100px;
+      margin: 70px auto 100px;
       font-size: 24px;
-      width: 200px;
-  height: 80px;
+      width: 230px;
+  height: 70px;
   }
 }

@@ -506,15 +506,23 @@ section {
 }
 
 .slick-slide {
-  transform: scale(0.5);
   transition: all 0.3s;
 }
-.slick-slide.slick-center {
-  transform: scale(1);
+.slick-slide img {
+  width: 300px;
+  height: 200px;
+}
+.slick-slide.slick-center img {
+  width: 600px;
+  height: 400px;
 }
 .slick-slide.slick-center .slider__item--name {
   display: block !important;
   text-wrap: nowrap;
+}
+
+.slider__item.slick-slide.slick-current.slick-active.slick-center img {
+  margin: 0 100px;
 }
 
 .slider__item--name {
@@ -546,10 +554,10 @@ section {
 }
 
 .detail-page {
-  max-width: 800px;
+  max-width: 830px;
   margin: 0 auto;
   padding: 1rem;
-  margin-top: 80px;
+  margin-top: 140px;
 }
 .detail-page .size-post-thumbnail {
   height: 200px;
@@ -578,20 +586,22 @@ section {
 }
 @media screen and (min-width: 835px) {
   .detail-page__post-title {
-    font-size: 30px;
+    margin-bottom: 10px;
+    font-size: 28px;
   }
 }
 
-.detail__post--txt {
+.detail__post--txt p {
   font-size: 14px;
+}
+@media screen and (min-width: 835px) {
+  .detail__post--txt p {
+    font-size: 16px;
+  }
 }
 .detail__post--txt p:nth-child(1) {
   margin-top: 20px;
-}
-@media screen and (min-width: 835px) {
-  .detail__post--txt {
-    font-size: 20px;
-  }
+  font-size: 20px;
 }
 .detail__post--txt .wp-block-heading {
   font-size: 20px;
@@ -604,7 +614,6 @@ section {
 @media screen and (min-width: 835px) {
   .detail__post--txt .wp-block-heading {
     font-size: 28px;
-    margin-top: 60px;
   }
   .detail__post--txt .wp-block-heading:nth-of-type(1) {
     margin-top: 50px;
@@ -622,36 +631,36 @@ section {
 }
 @media screen and (min-width: 835px) {
   .detail-page__post-btn--back {
-    margin: 60px auto 100px;
+    margin: 70px auto 100px;
     font-size: 24px;
-    width: 200px;
-    height: 80px;
+    width: 230px;
+    height: 70px;
   }
 }
 
-.archive.post-title {
+.archive.post__title {
   font-size: 16px;
 }
 @media screen and (min-width: 835px) {
-  .archive.post-title {
+  .archive.post__title {
     font-size: 20px;
   }
 }
-.archive.post-date {
+.archive.post__date {
   margin: 20px 0;
   font-size: 12px;
 }
 @media screen and (min-width: 835px) {
-  .archive.post-date {
+  .archive.post__date {
     font-size: 16px;
   }
 }
-.archive.post-txt {
+.archive.post__txt {
   font-size: 14px;
   margin-bottom: 20px;
 }
 @media screen and (min-width: 835px) {
-  .archive.post-txt {
+  .archive.post__txt {
     font-size: 18px;
   }
 }
@@ -660,6 +669,12 @@ section {
   font-size: 24px;
   margin: 30px 0;
 }
+@media screen and (min-width: 835px) {
+  .news-page .news-page__title {
+    margin: 60px 0;
+    font-size: 32px;
+  }
+}
 .news-page img {
   margin-bottom: 20px;
 }
@@ -667,14 +682,13 @@ section {
   margin-bottom: 10px;
 }
 .news-page .news-page__item {
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 @media screen and (min-width: 835px) {
   .news-page__list .news-page__item > a {
     display: flex;
     gap: 80px;
-    margin-bottom: 30px;
     height: 250px;
   }
 }
@@ -683,8 +697,14 @@ section {
   width: 100%;
 }
 @media screen and (min-width: 835px) {
-  .news-page__list .news-page__item > a .news-page__item-txt {
+  .news-page__list .news-page__item > a .size-post-thumbnail {
+    width: 64%;
+  }
+}
+@media screen and (min-width: 835px) {
+  .news-page__list .news-page__item > a .news-page__item--txt {
     width: 100%;
+    padding: 2rem 0;
   }
 }
 
@@ -695,23 +715,13 @@ nav {
   font-size: 20px;
 }
 
-.page-num {
-  display: flex;
-  gap: 10px;
-}
-
-.page-num li {
-  display: grid;
-  place-items: center;
-  width: 40px;
-  height: 40px;
-}
-.page-num li:not(:nth-child(4)) {
-  border: 1px solid #000;
-}
-
 .pagination {
-  margin: 40px 0 0;
+  margin-top: 40px;
+}
+@media screen and (min-width: 835px) {
+  .pagination {
+    margin-top: 20px;
+  }
 }
 
 .nav-links {
@@ -719,19 +729,26 @@ nav {
 }
 
 .pagination .page-numbers {
-  display: inline-block;
   margin-right: 20px;
-  padding: 10px 15px;
   border: 1px solid #000;
   color: #333;
   background: #fff;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
 }
 .pagination .page-numbers.next {
   display: none;
 }
+@media screen and (min-width: 835px) {
+  .pagination .page-numbers {
+    width: 40px;
+    height: 40px;
+  }
+}
 
 .pagination .current {
-  padding: 10px 15px;
   color: black;
   background: #839CF2;
 }

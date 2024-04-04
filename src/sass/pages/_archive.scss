@@ -2,20 +2,20 @@
 
 // post系のcss single.scss
 .archive{
-    &.post-title{
+    &.post__title{
         font-size: 16px;
         @include mq(){
             font-size: 20px;
         }
     }
-    &.post-date{
+    &.post__date{
         margin: 20px 0;
         font-size: 12px;
         @include mq(){
             font-size: 16px;
         }
     }
-    &.post-txt{
+    &.post__txt{
         font-size: 14px;
         margin-bottom: 20px;
         @include mq(){
@@ -28,6 +28,11 @@
     .news-page__title{
         font-size: 24px;
         margin: 30px 0;
+        @include mq(){
+            margin: 60px 0;
+            font-size: 32px;
+
+        }
     }
     & img{
         margin-bottom: 20px;
@@ -36,43 +41,42 @@
         margin-bottom: 10px;
     }
     .news-page__item{
-        margin-bottom: 60px;
+        margin-bottom: 50px;
     }
 }
+
 
 .news-page__list{
     .news-page__item > a{
         @include mq(){
             display: flex;
             gap:80px;
-            margin-bottom: 30px;
             height: 250px;
 
         }
 
-        // .news-page__item-img{
-        //     @include mq(){
-        //         width: 40%;
-        //     }
-        // }
 
         .size-post-thumbnail{
             height: 100%;
             width: 100%;
+            @include mq(){
+                width: 64%;
+            }
 
         }
-        .news-page__item-txt{
+        .news-page__item--txt{
             @include mq(){
                 width: 100%;
+                padding: 2rem 0;
             }
-            // .news-page__item-txt > h2 , p:not(p:nth-child(4)), .wp-block-heading {
-            //     display: none;
-            //  }
         }
     }
 }
 
 
+// /*==================================================
+// ナビゲーション
+// ===================================*/
 
 
 
@@ -83,49 +87,38 @@ nav {
     font-size: 20px;
   }
 
-.page-num{
-    display:flex;
-    gap: 10px;
-}
-  .page-num li {
-    display: grid;
-    place-items: center;
-    width: 40px;
-    height: 40px;
-    &:not(:nth-child(4)){
-        border: 1px solid #000;
-    }
-}
-
 .pagination{
-    margin:40px 0 0;
+    margin-top:40px;
+    @include mq(){
+        margin-top:20px;
+
+    }
  }
  .nav-links{
     display:flex;
  }
  .pagination .page-numbers{
-    display:inline-block;
     margin-right:20px;
-    padding:10px 15px;
     border: 1px solid #000;
     color:#333;
     background:#fff;
+    width: 40px;
+    height: 40px;
+    display: grid;
+        place-items: center;
     &.next{
         display: none;
      }
+     @include mq(){
+        width: 40px;
+        height: 40px;
+     }
  }
  .pagination .current{
-    padding:10px 15px;
     color:black;
     background: #839CF2;
  }
 
-//  .pagination .prev,
-//  .pagination .next{
-//     background:transparent;
-//     box-shadow:none;
-//     color:#69a4db;
-//  }
  .pagination .dots{
     background:transparent;
     box-shadow:none;

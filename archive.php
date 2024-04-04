@@ -10,10 +10,10 @@
           <li class="news-page__item">
             <a href="<?php the_permalink(); ?>">
               <?php the_post_thumbnail(); ?>
-              <div class="news-page__item-txt">
-                <h4 class="archive post-title"><?php the_title(); ?></h4>
-                <p class="archive post-date"><?php echo get_the_date('Y.m.d'); ?></p>
-                <p class="archive post-txt">
+              <div class="news-page__item--txt">
+                <h4 class="archive post__title"><?php the_title(); ?></h4>
+                <p class="archive post__date"><?php echo get_the_date('Y.m.d'); ?></p>
+                <p class="archive post__txt">
                   <?php
                   global $post; // $post変数をグローバルスコープから取得
 

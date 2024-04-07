@@ -41,6 +41,11 @@ function my_script_init()
 {
     wp_enqueue_style('my-css', get_stylesheet_directory_uri() . '/dist/css/style.css');
     wp_enqueue_script('my-js', get_stylesheet_directory_uri() . '/dist/js/script.js');
+
+    wp_enqueue_style('jq-css', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css');
+    wp_enqueue_script('js-slick', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js');
+
     wp_enqueue_style('my-img', get_stylesheet_directory_uri() . '/img/Logo.png');
+    wp_enqueue_style('googlefonts', 'https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap rel="stylesheet"');
 }
 'add_action'('wp_enqueue_scripts', 'my_script_init');

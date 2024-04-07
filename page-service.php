@@ -103,26 +103,26 @@
     <h3 class="sec-title">導入事例</h3>
     <div class="slider">
       <div class="slider__item">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/AdobeStock_463369910.png" alt="" / width="300" height="200">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/AdobeStock_463369910.png" alt="" width="600" height="400">
         <p class="slider__item--name">グローバルテック・サービス株式会社</p>
       </div>
       <div class="slider__item">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/AdobeStock_463369910.png" alt="" / width="300" height="200">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/AdobeStock_463369910.png" alt="" width="600" height="400">
         <p class="slider__item--name">グローバルテック・サービス株式会社2</p>
 
       </div>
       <div class="slider__item">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/AdobeStock_463369910.png" alt="" / width="300" height="200">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/AdobeStock_463369910.png" alt="" width="600" height="400">
         <p class="slider__item--name">グローバルテック・サービス株式会社3</p>
 
       </div>
       <div class="slider__item">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/AdobeStock_463369910.png" alt="" / width="300" height="200">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/AdobeStock_463369910.png" alt="" width="600" height="400">
         <p class="slider__item--name">グローバルテック・サービス株式会社4</p>
 
       </div>
       <div class="slider__item">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/AdobeStock_463369910.png" alt="" / width="300" height="200">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/AdobeStock_463369910.png" alt="" width="600" height="400">
         <p class="slider__item--name">グローバルテック・サービス株式会社5</p>
 
       </div>

@@ -12,7 +12,6 @@
         <li class="footer-list__item"><a href="<?php echo 'home_url'('/'); ?>contact">contact</a></li>
     </ul>
 </footer>
-<script src="../dist/js/script.js"></script>
 <?php 'wp_footer'(); ?>
 </body>
 

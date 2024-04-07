@@ -4,12 +4,18 @@
   max-width: 830px;
   margin: 0 auto;
   padding: 1rem;
-  margin-top: 140px;
+  margin-top: 60px;
+  line-height: 1.5;
+  @include mq(){
+    margin-top: 140px;
+
+  }
   .size-post-thumbnail {
     height: 200px;
-    width: 100%;
+    width: 335px;
     @include mq() {
       height: 330px;
+      width: 800px;
     }
   }
 }
@@ -34,13 +40,18 @@
 
 .detail__post--txt {
   & p{
+    line-height: 1.5;
     font-size: 14px;
     @include mq() {
       font-size: 16px;
     }
     &:nth-child(1) {
+      line-height: 1.5;
       margin-top: 20px;
-      font-size: 20px;
+      font-size: 16px;
+      @include mq() {
+        font-size: 20px;
+      }
     }
   }
 
@@ -50,7 +61,7 @@
     text-align: left;
     border-left: 5px solid #000;
     padding-left: 1rem;
-    margin-top: 40px;
+    margin: 30px 0 10px;
     @include mq() {
       font-size: 28px;
       &:nth-of-type(1) {

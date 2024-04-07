@@ -7,7 +7,7 @@
   margin: 0 auto;
   background: $cMain;
   color: #fff;
-  padding: 1rem 1rem 2rem;
+  padding: 1rem;
   position: relative;
   @include mq() {
     padding: 1rem 0 2rem;
@@ -34,10 +34,11 @@
   .sec-contact__container {
     text-align: center;
     background: #fff;
-    padding: 2rem 0rem;
+    padding: 1rem 0rem;
     max-width: 600px;
     margin: 20px auto 25px;
     @include mq() {
+      padding: 2rem 0rem;
       display: flex;
       margin: 20px auto 0;
       justify-content: space-around;

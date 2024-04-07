@@ -170,32 +170,28 @@
   }
 }
 
-
 .slick-slide {
-  // transform: scale(0.5);
   transition: all 0.3s;
-  & img{
+  & img {
     width: 300px;
     height: 200px;
-    // margin: 0 100px;
-  }
-  &.slick-center {
-    & img{
+    @include mq(){
       width: 600px;
       height: 400px;
     }
-    // transform: scale(1);
+  }
+  &.slick-center {
     .slider__item--name {
       display: block !important;
       text-wrap: nowrap;
     }
   }
 }
-.slider__item.slick-slide.slick-current.slick-active.slick-center{
-  img{
-   margin: 0 100px;
-  }
+
+.slider__item {
+  margin-right: 100px;
 }
+
 
 .slider__item--name {
   text-align: center;

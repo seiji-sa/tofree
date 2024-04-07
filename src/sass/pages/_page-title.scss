@@ -4,12 +4,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 240px;
+    height: 180px;
     padding: 2rem;
     color: $cWhite;
     font-size: 32px;
     background: url(../../img/AdobeStock_463369910.png) no-repeat center / 100vw;
     @include mq(){
+        height: 240px;
         font-size: 48px;
 
     }

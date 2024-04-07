@@ -44,7 +44,7 @@
           効率の良い事業運営をお助けします。
         </p>
         <p class="sec-container__txt--foot">
-          プロジェクトに必要なスキルを持つフリーランス専門家をご紹介。
+          プロジェクトに必要なスキルを持つフリーランス専門家をご紹介。<br>
           柔軟なリソース活用とコスト効率を実現します。
         </p>
         <a class="sec-container__txt--btn" href="<?php echo 'home_url'('/'); ?>service">サービスについてもっと詳しく ></a>

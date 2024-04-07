@@ -5,23 +5,31 @@
 .contact-wrap {
   max-width: 600px;
   margin: 0 auto;
-  // padding: 0 5rem;
 }
 
 .contact-page__title {
   font-size: 32px;
-  @include mq() {
-  }
-  font-size: 45px;
-  margin-top: 5rem;
-  padding: 5rem;
+  font-weight: bold;
+  margin-top: 3rem;
+  padding: 4rem 0 3rem;
   text-align: center;
+  @include mq() {
+    padding: 5rem 0 3rem;
+    font-size: 45px;
+  }
 }
 
 form {
   padding: 0 1rem;
   @include mq() {
-    padding: 0 8rem;
+    padding: 0;
+  }
+}
+
+label {
+  font-size: 20px;
+  @include mq() {
+    font-size: 24px;
   }
 }
 dt,
@@ -31,32 +39,64 @@ dd {
 }
 
 dd {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
-input[type="text"]{
+input[type="text"] {
+  border: 1px solid rgba($color: #000000, $alpha: 0.3);
   background: $cWhite;
-  width: 100%;
-  height: 2.5rem;
+  width: 335px;
+  height: 60px;
+  @include mq() {
+    height: 72px;
+    width: 600px;
+  }
 }
-input[type="email"]{
+input[type="email"] {
   background: $cWhite;
-  width: 100%;
-  height: 2.5rem;
+  border: 1px solid rgba($color: #000000, $alpha: 0.3);
+  width: 335px;
+  height: 60px;
+  margin-top: -20px;
+  @include mq() {
+    height: 72px;
+    width: 600px;
+  }
 }
 textarea {
   background: $cWhite !important;
-  width: 100%;
-  height: 4.5rem;
+  border: 1px solid rgba($color: #000000, $alpha: 0.3);
+  width: 335px;
+  height: 150px;
+  @include mq() {
+    height: 135px;
+    width: 600px;
+  }
 }
 
 .sub-btn {
   text-align: center;
+  font-size: 24px;
+  font-weight: bold;
   padding: 30px 0;
+  position: relative;
 }
 input[type="submit"] {
   background: $cMain;
   color: $cWhite;
-  border-radius: 2rem;
-  padding: 1rem 2rem;
+  border-radius: 3rem;
+  margin: 10px auto;
+  width: 200px;
+  height: 60px;
+  @include mq() {
+    width: 250px;
+    height: 75px;
+    margin: 10px auto 75px;
+  }
+}
+
+.wpcf7-spinner {
+  position: absolute;
+  top: 0;
+  right: 0;
 }

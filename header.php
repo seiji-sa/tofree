@@ -19,7 +19,7 @@
         <div class="header">
             <h1 class="header__logo">
                 <a href="<?php echo home_url('/'); ?>">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/Logo.png" alt="">
+                    <img class="header__logo--img" src="<?php echo get_template_directory_uri(); ?>/img/Logo.png" alt="">
                     <p class="header__logo--txt">TOFREE<br>consulting</p>
                 </a>
             </h1>

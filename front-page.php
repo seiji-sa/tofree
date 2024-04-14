@@ -4,8 +4,8 @@
     <div class="l-wrapper">
       <div class="hero__txt">
         <div class="hero__txt--left">
-          <p>ビジョン実現の</p>
-          <p>パートナー</p>
+          <p>ビジョン実現の<br>
+            パートナー</p>
           <div class="hero__txt--left--btn">
             <a href="<?php echo 'home_url'('/'); ?>contact">contact</a>
           </div>
@@ -22,8 +22,7 @@
       </div>
       <div class="sec-container__txt">
         <p class="sec-container__txt--head">
-          東フリコンサルはクライアントと<br />
-          二人三脚でのお仕事を徹底しています。
+          東フリコンサルはクライアントと二人三脚でのお仕事を徹底しています。
         </p>
         <p class="sec-container__txt--foot">
           プロジェクトに必要なスキルセットを持つフリーランスプロフェッショナルを厳選し、貴社のビジョンを実現するお手伝いをします。
@@ -40,11 +39,11 @@
       </div>
       <div class="sec-container__txt">
         <p class="sec-container__txt--head">
-          貴社の必要とす人材を見極め<br />
+          貴社の必要とす人材を見極め
           効率の良い事業運営をお助けします。
         </p>
         <p class="sec-container__txt--foot">
-          プロジェクトに必要なスキルを持つフリーランス専門家をご紹介。<br>
+          プロジェクトに必要なスキルを持つフリーランス専門家をご紹介。
           柔軟なリソース活用とコスト効率を実現します。
         </p>
         <a class="sec-container__txt--btn" href="<?php echo 'home_url'('/'); ?>service">サービスについてもっと詳しく ></a>

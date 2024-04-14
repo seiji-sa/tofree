@@ -2,7 +2,7 @@
 /* hero
  ==========================================================================================*/
 .hero {
-  background: url(../../img/FV-img.png) no-repeat center/100vw 100%;
+  background: url(../../img/FV-img.png) no-repeat center/cover;
   margin-bottom: -20px;
 }
 @media screen and (min-width: 835px) {
@@ -11,10 +11,11 @@
   }
 }
 .hero .hero__txt {
-  padding: 5.7rem 0 11rem;
+  padding: 6rem 0 11rem;
 }
 @media screen and (min-width: 835px) {
   .hero .hero__txt {
+    width: 100%;
     padding: 5.7rem 0;
   }
 }
@@ -40,6 +41,7 @@
 @media screen and (min-width: 835px) {
   .hero .hero__txt .hero__txt--right {
     text-align: right;
+    letter-spacing: 5px;
     font-size: 6.5rem;
     padding-bottom: 2rem;
   }
@@ -94,17 +96,20 @@
   }
 }
 
+.l-wrapper.sec-container {
+  letter-spacing: 0;
+}
 @media screen and (min-width: 835px) {
   .l-wrapper.sec-container {
     display: flex;
     gap: 10%;
-    padding: 2.5rem 2rem 4rem;
+    padding: 2.5rem 1rem 4rem;
     margin-bottom: 40px;
   }
 }
 @media screen and (min-width: 835px) {
   .l-wrapper.sec-container .sec-container__txt {
-    width: 40%;
+    width: 41%;
   }
 }
 .l-wrapper.sec-container .sec-container__img {
@@ -118,21 +123,21 @@
 }
 .l-wrapper.sec-container .sec-container__img img {
   height: 250px;
-  width: 335px;
+  min-width: 335px;
 }
 @media screen and (min-width: 835px) {
   .l-wrapper.sec-container .sec-container__img img {
     height: 354px;
-    width: 550px;
+    max-width: 550px;
   }
 }
 .l-wrapper.sec-container .sec-container__txt .sec-container__txt--head {
   font-weight: bold;
   font-size: 18px;
-  letter-spacing: 1px;
 }
 @media screen and (min-width: 835px) {
   .l-wrapper.sec-container .sec-container__txt .sec-container__txt--head {
+    letter-spacing: 1px;
     font-size: 24px;
   }
 }
@@ -151,6 +156,7 @@
   color: white;
   padding: 0.5rem 1rem;
   margin-bottom: 50px;
+  text-wrap: nowrap;
 }
 @media screen and (min-width: 835px) {
   .l-wrapper.sec-container .sec-container__txt .sec-container__txt--btn {
@@ -167,11 +173,17 @@
 .about .sec-container .sec-container__txt--head {
   margin: 50px 0 30px;
 }
+@media screen and (min-width: 835px) {
+  .about .sec-container .sec-container__txt--head {
+    margin-top: 0;
+  }
+}
 
 /* service
  ==========================================================================================*/
 .service {
   background: #bfdbf4;
+  padding: 10px 0;
 }
 .service .sec-title {
   margin-top: -10px;
@@ -179,11 +191,16 @@
 .service .sec-container__txt--head {
   margin: 30px 0;
 }
+@media screen and (min-width: 835px) {
+  .service .sec-container__txt--head {
+    margin: 0;
+  }
+}
 
 /* news
  ==========================================================================================*/
 .news {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 @media screen and (min-width: 835px) {
   .news {
@@ -960,22 +977,19 @@ input[type=submit] {
 }
 
 .l-wrapper {
-  max-width: 1124px;
+  max-width: 1135px;
   margin: 0 auto;
   padding: 0 1rem;
 }
 
 .header {
   display: flex;
-  z-index: 3;
-  width: 100%;
-  justify-content: space-around;
   align-items: center;
   background: rgba(255, 255, 255, 0.8);
+  width: 100%;
   height: 60px;
-  gap: 25%;
   top: 0;
-  right: 0;
+  position: fixed;
   z-index: 1;
   position: absolute;
 }
@@ -985,6 +999,14 @@ input[type=submit] {
     height: 80px;
   }
 }
+.header .l-header {
+  align-items: center;
+  display: flex;
+  width: 1135px;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
 .header .header__logo a {
   display: flex;
   gap: 5px;
@@ -993,20 +1015,30 @@ input[type=submit] {
 .header .header__logo a .header__logo--img {
   width: 24px;
   height: 36px;
+  margin: 6px 3px 0px 2px;
 }
 @media screen and (min-width: 835px) {
   .header .header__logo a .header__logo--img {
+    margin: 0;
     width: 30.64px;
     height: 47.25px;
   }
 }
 .header .header__logo a .header__logo--txt {
   font-size: 16px;
+  font-weight: bold;
+  line-height: 1.5;
 }
 @media screen and (min-width: 835px) {
   .header .header__logo a .header__logo--txt {
+    line-height: 1.2;
     font-size: 21.08px;
     font-weight: bold;
+  }
+}
+@media screen and (min-width: 835px) {
+  .header .header__logo a .header__logo--txt--bottom {
+    font-size: 23px;
   }
 }
 .header .header-list {
@@ -1019,13 +1051,13 @@ input[type=submit] {
   .header .header-list {
     display: flex;
     align-items: center;
-    gap: 42px;
+    gap: 45px;
   }
   .header .header-list :nth-child(4) {
     background: #3B41DA;
     color: white;
     border-radius: 2rem;
-    padding: 0.9rem 2.5rem;
+    padding: 0.8rem 2.5rem;
   }
 }
 
@@ -1046,7 +1078,7 @@ input[type=submit] {
   height: 3px;
   border-radius: 2px;
   background: #000000;
-  width: 45%;
+  width: 55%;
 }
 
 .openbtn1 span:nth-of-type(1) {
@@ -1102,7 +1134,7 @@ a {
   margin: 0 auto;
   background: #3B41DA;
   color: #fff;
-  padding: 1rem;
+  padding: 1rem 1rem 0.5rem;
   position: relative;
 }
 @media screen and (min-width: 835px) {
@@ -1194,7 +1226,7 @@ a {
   background: rgba(0, 0, 0, 0.9);
   color: rgb(213, 213, 213);
   text-align: center;
-  padding: 2rem 3rem;
+  padding: 40px 3rem;
 }
 @media screen and (min-width: 835px) {
   .footer {
@@ -1204,6 +1236,7 @@ a {
   }
 }
 .footer .footer__logo a {
+  text-align: left;
   display: flex;
   gap: 5px;
   justify-content: center;
@@ -1221,7 +1254,7 @@ a {
   column-gap: 3em;
   display: grid;
   grid-template-columns: repeat(2, auto);
-  margin: 58px auto 0;
+  margin: 40px auto 0;
 }
 .footer .footer-list :nth-child(3), .footer .footer-list :nth-child(4) {
   margin-top: 30px;
@@ -1647,8 +1680,19 @@ h3 {
   text-align: center;
 }
 
+/* Slider */
+.slick-loading .slick-list {
+  background: #fff url("./ajax-loader.gif") center center no-repeat;
+}
 
-
+/* Icons */
+@font-face {
+  font-family: "slick";
+  src: url("./fonts/slick.eot");
+  src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/slick.woff") format("woff"), url("./fonts/slick.ttf") format("truetype"), url("./fonts/slick.svg#slick") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 /* Arrows */
 .slick-prev,
 .slick-next {

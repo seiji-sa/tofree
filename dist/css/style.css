@@ -282,7 +282,7 @@
 }
 
 .philosophy__img {
-  width: 335px;
+  min-width: 335px;
   height: 332px;
   display: grid;
   object-fit: contain;
@@ -290,7 +290,7 @@
 }
 @media screen and (min-width: 835px) {
   .philosophy__img {
-    width: 800px;
+    max-width: 800px;
     height: 721px;
   }
 }
@@ -314,14 +314,14 @@
   margin-bottom: 20px;
 }
 .greeting .greeting__img img {
-  width: 335px;
+  min-width: 335px;
   height: 230px;
   margin-top: 30px;
 }
 @media screen and (min-width: 835px) {
   .greeting .greeting__img img {
-    margin-top: 30px;
-    width: 486px;
+    margin-top: 0px;
+    max-width: 486px;
     height: 335px;
   }
 }
@@ -409,6 +409,7 @@
   font-size: 24px;
   padding: 30px;
   margin-bottom: 10px;
+  font-weight: bold;
 }
 @media screen and (min-width: 835px) {
   .sec-title {
@@ -424,12 +425,12 @@
 }
 
 .cando__list .cando__item {
-  margin-bottom: 30px;
+  margin-bottom: 56px;
 }
 @media screen and (min-width: 1085px) {
   .cando__list .cando__item {
     position: relative;
-    margin-bottom: 120px;
+    margin-bottom: 185px;
     height: 500px;
   }
   .cando__list .cando__item:nth-child(1) {
@@ -437,18 +438,19 @@
   }
   .cando__list .cando__item:nth-child(3) {
     flex-direction: row-reverse;
+    margin-bottom: 95px;
   }
 }
 .cando__list .cando__txt, .cando__list .cando__txt--left {
   background: rgba(122, 178, 244, 0.5);
-  padding: 1rem;
+  padding: 1rem 1rem 65px;
 }
 @media screen and (min-width: 1085px) {
   .cando__list .cando__txt, .cando__list .cando__txt--left {
+    padding: 1rem 3rem 65px 44%;
     height: 100%;
     width: 100%;
-    padding-left: 50%;
-    margin-top: 140px;
+    margin-top: 75px;
   }
   .cando__list .cando__txt br, .cando__list .cando__txt--left br {
     display: none;
@@ -462,7 +464,7 @@
 @media screen and (min-width: 1085px) {
   .cando__list .cando__txt .cando__txt--head, .cando__list .cando__txt--left .cando__txt--head {
     font-size: 24px;
-    margin-top: 140px;
+    margin: 80px 0 45px;
   }
 }
 .cando__list .cando__txt .cando__txt--foot, .cando__list .cando__txt--left .cando__txt--foot {
@@ -474,15 +476,18 @@
     font-size: 20px;
   }
 }
+.cando__list .cando__txt .text-spaceHight, .cando__list .cando__txt--left .text-spaceHight {
+  margin-bottom: -46px;
+}
 @media screen and (min-width: 1085px) {
   .cando__list .cando__txt--left {
-    padding-right: 50%;
-    padding-left: 2rem;
+    padding-right: 44%;
+    padding-left: 3rem;
   }
 }
 .cando__list .cando__img {
   width: 60%;
-  margin-top: -60px;
+  margin-top: -50px;
   z-index: 2;
 }
 @media screen and (min-width: 1085px) {
@@ -516,25 +521,32 @@
 }
 @media screen and (min-width: 835px) {
   .reason {
-    padding-top: 0;
-    padding-bottom: 80px;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 835px) and (min-width: 835px) {
+  .reason .sec-title {
+    padding: 60px;
   }
 }
 .reason .reason__list {
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 1rem 40px;
   max-width: 960px;
 }
 @media screen and (min-width: 835px) {
   .reason .reason__list {
     max-width: 1240px;
     display: flex;
-    gap: 4%;
+    gap: 3%;
   }
 }
 .reason .reason__list .reason__item {
   margin-bottom: 80px;
   text-align: center;
+}
+.reason .reason__list .reason__item:nth-child(3) {
+  margin-bottom: 0;
 }
 @media screen and (min-width: 835px) {
   .reason .reason__list .reason__item {
@@ -543,6 +555,11 @@
 }
 .reason .reason__list .reason__item .reason__img {
   margin-bottom: 30px;
+}
+@media screen and (min-width: 835px) {
+  .reason .reason__list .reason__item .reason__img {
+    margin-bottom: 44px;
+  }
 }
 .reason .reason__list .reason__item .reason__img img {
   width: 300px;
@@ -571,11 +588,27 @@
 }
 
 .case {
-  margin-bottom: 120px;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 835px) {
+  .case {
+    margin-bottom: 120px;
+  }
+}
+@media screen and (min-width: 835px) {
+  .case .sec-title {
+    padding: 30px;
+    margin-bottom: 50px;
+  }
 }
 
 .slick-dots {
-  bottom: -45px !important;
+  bottom: -2px !important;
+}
+@media screen and (min-width: 835px) {
+  .slick-dots {
+    bottom: -45px !important;
+  }
 }
 .slick-dots li button {
   display: block;
@@ -596,7 +629,7 @@
 
 .slick-slide {
   height: 200px;
-  margin-right: 50px;
+  margin-right: 80px;
 }
 @media screen and (min-width: 835px) {
   .slick-slide {
@@ -614,11 +647,22 @@
   }
 }
 
+.slick-center .slider__item--name {
+  display: block;
+}
+
 .slider__item--name {
   text-align: center;
-  font-size: 24px;
-  margin: 30px 0 30px;
+  font-size: 18px;
+  margin: 22px 0 38px;
   display: none;
+  letter-spacing: -1px;
+}
+@media screen and (min-width: 835px) {
+  .slider__item--name {
+    margin: 30px 0 30px;
+    font-size: 24px;
+  }
 }
 
 .slider {
@@ -627,19 +671,35 @@
 .slider .slick-arrow {
   cursor: pointer;
   position: absolute;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   top: 100%;
   left: 50%;
   z-index: 999;
 }
+@media screen and (min-width: 835px) {
+  .slider .slick-arrow {
+    width: 40px;
+    height: 40px;
+  }
+}
 .slider .slick-arrow.slick-prev {
-  background: url(../../img/slide-arrow.png) no-repeat 100% 100%;
-  transform: translate(-300%, 40%);
+  background: url(../../img/slide-arrow.png) no-repeat center/cover;
+  transform: translate(-340%, -70%);
+}
+@media screen and (min-width: 835px) {
+  .slider .slick-arrow.slick-prev {
+    transform: translate(-300%, 40%);
+  }
 }
 .slider .slick-arrow.slick-next {
-  background: url(../../img/swiper-btn-next.png) no-repeat 100% 100%;
-  transform: translate(200%, 40%);
+  background: url(../../img/swiper-btn-next.png) no-repeat center/cover;
+  transform: translate(260%, -70%);
+}
+@media screen and (min-width: 835px) {
+  .slider .slick-arrow.slick-next {
+    transform: translate(200%, 40%);
+  }
 }
 
 .detail-page {

@@ -2,9 +2,11 @@
 
 .sec-title {
   font-size: 24px;
-  padding: 3rem;
+  padding: 30px;
+  margin-bottom: 10px;
   @include mq() {
     font-size: 32px;
+    padding: 3rem;
   }
 }
 
@@ -32,7 +34,7 @@
   }
   .cando__txt {
     background: rgba(#7ab2f4, 0.5);
-    padding: 2rem 2rem 60px;
+    padding: 1rem;
     @include mq(l2) {
       height: 100%;
       width: 100%;
@@ -42,16 +44,18 @@
         display: none;
       }
     }
+
     .cando__txt--head {
-      margin-bottom: 20px;
+      margin-bottom: 5px;
       font-size: 20px;
+      font-weight: bold;
       @include mq(l2) {
         font-size: 24px;
         margin-top: 140px;
       }
     }
     .cando__txt--foot {
-      margin-bottom: 20px;
+      margin-bottom: 60px;
       font-size: 16px;
       @include mq(l2) {
         font-size: 20px;
@@ -60,8 +64,11 @@
   }
   .cando__txt--left {
     @extend .cando__txt;
-    padding-right: 50%;
-    padding-left: 2rem;
+    @include mq(l2){
+      padding-right: 50%;
+      padding-left: 2rem;
+
+    }
   }
   .cando__img {
     width: 60%;
@@ -97,13 +104,15 @@
 // =======================================
 
 .reason {
+  padding-top: 25px;
   background: rgba($color: #bfdbf4, $alpha: 0.3);
   @include mq() {
+    padding-top: 0;
     padding-bottom: 80px;
   }
   .reason__list {
     margin: 0 auto;
-    padding: 1rem;
+    padding: 0 1rem;
     max-width: 960px;
     @include mq() {
       max-width: 1240px;
@@ -111,7 +120,7 @@
       gap: 4%;
     }
     .reason__item {
-      margin-bottom: 30px;
+      margin-bottom: 80px;
       text-align: center;
       @include mq() {
         width: 30%;
@@ -119,23 +128,25 @@
       .reason__img {
         margin-bottom: 30px;
         img {
-          width: 250px;
-          height: 250px;
+          width: 300px;
+          height: 300px;
           border-radius: 50%;
-          @include mq() {
-            width: 300px;
-            height: 300px;
-          }
         }
       }
       .reason__txt--head {
         text-align: center;
         margin-bottom: 30px;
+        font-weight: bold;
+        letter-spacing: 1.5;
+        line-height: 1;
+        font-size: 18px;
         @include mq() {
           font-size: 20px;
         }
       }
       .reason__txt--foot {
+        letter-spacing: -1px;
+        font-size: 16px;
         text-align: left;
         width: 300px;
         margin: 0 auto;

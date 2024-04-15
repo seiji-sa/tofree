@@ -1,15 +1,16 @@
 @use 'globals' as *;
 .page-title{
-    margin-top: 80px;
+    margin-top: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 180px;
-    padding: 2rem;
+    padding: 100px;
     color: $cWhite;
     font-size: 32px;
     background: url(../../img/AdobeStock_463369910.png) no-repeat center / 100vw;
     @include mq(){
+        margin-top: 80px;
         height: 240px;
         font-size: 48px;
 

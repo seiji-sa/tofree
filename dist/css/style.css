@@ -272,12 +272,11 @@
  ==========================================================================================*/
 .philosophy {
   max-width: 500px;
-  margin: 0px auto 60px;
+  margin: 0 auto 60px;
 }
 @media screen and (min-width: 835px) {
   .philosophy {
-    margin: 0 auto 50px;
-    margin-bottom: 100px;
+    margin-bottom: 120px;
     max-width: 800px;
   }
 }
@@ -287,6 +286,7 @@
   height: 332px;
   display: grid;
   object-fit: contain;
+  margin: 0 auto;
 }
 @media screen and (min-width: 835px) {
   .philosophy__img {
@@ -305,7 +305,7 @@
 }
 @media screen and (min-width: 835px) {
   .greeting .greeting__container {
-    padding-bottom: 50px;
+    padding-bottom: 70px;
     display: flex;
     gap: 50px;
   }
@@ -340,13 +340,11 @@
  ==========================================================================================*/
 .profile .profile__container {
   max-width: 500px;
-  margin: 10px auto 40px;
+  margin: 10px auto 30px;
 }
 @media screen and (min-width: 835px) {
   .profile .profile__container {
     max-width: 700px;
-    font-size: 18px;
-    font-weight: normal;
     margin-bottom: 70px;
   }
 }
@@ -357,8 +355,10 @@
 }
 .profile .profile__container th,
 .profile .profile__container td {
+  font-size: 18px;
   border: solid 1px rgba(0, 0, 0, 0.2);
   padding: 1rem;
+  font-weight: normal;
 }
 @media screen and (max-width: 835px) {
   .profile .profile__container th,
@@ -367,13 +367,13 @@
     display: block;
   }
 }
+.profile .profile__container th {
+  width: 140px;
+}
 @media screen and (max-width: 835px) {
   .profile .profile__container th {
     padding: 5px 10px 0;
   }
-}
-.profile .profile__container td {
-  font-size: 16px;
 }
 @media screen and (max-width: 835px) {
   .profile .profile__container td {
@@ -387,18 +387,19 @@
 }
 
 .page-title {
-  margin-top: 80px;
+  margin-top: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 180px;
-  padding: 2rem;
+  padding: 100px;
   color: white;
   font-size: 32px;
   background: url(../../img/AdobeStock_463369910.png) no-repeat center/100vw;
 }
 @media screen and (min-width: 835px) {
   .page-title {
+    margin-top: 80px;
     height: 240px;
     font-size: 48px;
   }
@@ -406,11 +407,13 @@
 
 .sec-title {
   font-size: 24px;
-  padding: 3rem;
+  padding: 30px;
+  margin-bottom: 10px;
 }
 @media screen and (min-width: 835px) {
   .sec-title {
     font-size: 32px;
+    padding: 3rem;
   }
 }
 
@@ -438,7 +441,7 @@
 }
 .cando__list .cando__txt, .cando__list .cando__txt--left {
   background: rgba(122, 178, 244, 0.5);
-  padding: 2rem 2rem 60px;
+  padding: 1rem;
 }
 @media screen and (min-width: 1085px) {
   .cando__list .cando__txt, .cando__list .cando__txt--left {
@@ -452,8 +455,9 @@
   }
 }
 .cando__list .cando__txt .cando__txt--head, .cando__list .cando__txt--left .cando__txt--head {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   font-size: 20px;
+  font-weight: bold;
 }
 @media screen and (min-width: 1085px) {
   .cando__list .cando__txt .cando__txt--head, .cando__list .cando__txt--left .cando__txt--head {
@@ -462,7 +466,7 @@
   }
 }
 .cando__list .cando__txt .cando__txt--foot, .cando__list .cando__txt--left .cando__txt--foot {
-  margin-bottom: 20px;
+  margin-bottom: 60px;
   font-size: 16px;
 }
 @media screen and (min-width: 1085px) {
@@ -470,9 +474,11 @@
     font-size: 20px;
   }
 }
-.cando__list .cando__txt--left {
-  padding-right: 50%;
-  padding-left: 2rem;
+@media screen and (min-width: 1085px) {
+  .cando__list .cando__txt--left {
+    padding-right: 50%;
+    padding-left: 2rem;
+  }
 }
 .cando__list .cando__img {
   width: 60%;
@@ -505,16 +511,18 @@
 }
 
 .reason {
+  padding-top: 25px;
   background: rgba(191, 219, 244, 0.3);
 }
 @media screen and (min-width: 835px) {
   .reason {
+    padding-top: 0;
     padding-bottom: 80px;
   }
 }
 .reason .reason__list {
   margin: 0 auto;
-  padding: 1rem;
+  padding: 0 1rem;
   max-width: 960px;
 }
 @media screen and (min-width: 835px) {
@@ -525,7 +533,7 @@
   }
 }
 .reason .reason__list .reason__item {
-  margin-bottom: 30px;
+  margin-bottom: 80px;
   text-align: center;
 }
 @media screen and (min-width: 835px) {
@@ -537,19 +545,17 @@
   margin-bottom: 30px;
 }
 .reason .reason__list .reason__item .reason__img img {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
-}
-@media screen and (min-width: 835px) {
-  .reason .reason__list .reason__item .reason__img img {
-    width: 300px;
-    height: 300px;
-  }
 }
 .reason .reason__list .reason__item .reason__txt--head {
   text-align: center;
   margin-bottom: 30px;
+  font-weight: bold;
+  letter-spacing: 1.5;
+  line-height: 1;
+  font-size: 18px;
 }
 @media screen and (min-width: 835px) {
   .reason .reason__list .reason__item .reason__txt--head {
@@ -557,6 +563,8 @@
   }
 }
 .reason .reason__list .reason__item .reason__txt--foot {
+  letter-spacing: -1px;
+  font-size: 16px;
   text-align: left;
   width: 300px;
   margin: 0 auto;
@@ -856,7 +864,12 @@ nav {
 }
 
 .contact-page {
-  background: #BFDBF4;
+  background: rgba(191, 219, 244, 0.3);
+}
+@media screen and (min-width: 835px) {
+  .contact-page {
+    margin-top: 5rem;
+  }
 }
 
 .contact-wrap {
@@ -873,13 +886,13 @@ nav {
 }
 @media screen and (min-width: 835px) {
   .contact-page__title {
-    padding: 5rem 0 3rem;
+    padding: 3rem 0 3rem;
     font-size: 45px;
   }
 }
 
 form {
-  padding: 0 1rem;
+  padding: 0 1rem 15px;
 }
 @media screen and (min-width: 835px) {
   form {
@@ -1139,7 +1152,7 @@ a {
 }
 @media screen and (min-width: 835px) {
   .sec-contact {
-    padding: 1rem 0 2rem;
+    padding: 3rem 0 3rem;
   }
 }
 .sec-contact .sec-contact__title {
@@ -1167,7 +1180,7 @@ a {
   background: #fff;
   padding: 1rem 0rem;
   max-width: 600px;
-  margin: 20px auto 25px;
+  margin: 20px auto 15px;
 }
 @media screen and (min-width: 835px) {
   .sec-contact .sec-contact__container {
@@ -1230,8 +1243,8 @@ a {
 }
 @media screen and (min-width: 835px) {
   .footer {
-    padding: 8rem 3rem 4rem;
-    margin-top: -70px;
+    padding: 11rem 3rem 4rem;
+    margin-top: -110px;
     z-index: -1;
   }
 }
@@ -1256,17 +1269,19 @@ a {
   grid-template-columns: repeat(2, auto);
   margin: 40px auto 0;
 }
-.footer .footer-list :nth-child(3), .footer .footer-list :nth-child(4) {
+.footer .footer-list :nth-child(3),
+.footer .footer-list :nth-child(4) {
   margin-top: 30px;
 }
 @media screen and (min-width: 835px) {
   .footer .footer-list {
-    margin: 50px auto 0;
+    margin: 40px auto 0;
     font-size: 24px;
     display: flex;
     column-gap: 4em;
   }
-  .footer .footer-list :nth-child(3), .footer .footer-list :nth-child(4) {
+  .footer .footer-list :nth-child(3),
+  .footer .footer-list :nth-child(4) {
     margin-top: 0px;
   }
 }

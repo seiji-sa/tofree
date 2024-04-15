@@ -10,7 +10,7 @@
   padding: 1rem 1rem .5rem;
   position: relative;
   @include mq() {
-    padding: 1rem 0 2rem;
+    padding: 3rem 0 3rem;
 
   }
   .sec-contact__title {
@@ -36,7 +36,7 @@
     background: #fff;
     padding: 1rem 0rem;
     max-width: 600px;
-    margin: 20px auto 25px;
+    margin: 20px auto 15px;
     @include mq() {
       padding: 2rem 0rem;
       display: flex;

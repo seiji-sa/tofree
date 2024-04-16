@@ -742,11 +742,14 @@
 }
 @media screen and (min-width: 835px) {
   .detail-page__post-title {
-    margin-bottom: 10px;
+    margin-bottom: 23px;
     font-size: 28px;
   }
 }
 
+.detail__post--txt {
+  letter-spacing: -1px;
+}
 .detail__post--txt p {
   line-height: 1.5;
   font-size: 14px;
@@ -776,10 +779,11 @@
 }
 @media screen and (min-width: 835px) {
   .detail__post--txt .wp-block-heading {
+    margin: 56px 0 10px;
     font-size: 28px;
   }
   .detail__post--txt .wp-block-heading:nth-of-type(1) {
-    margin-top: 50px;
+    margin-top: 64px;
   }
 }
 
@@ -794,7 +798,7 @@
 }
 @media screen and (min-width: 835px) {
   .detail-page__post-btn--back {
-    margin: 70px auto 100px;
+    margin: 70px auto 83px;
     font-size: 24px;
     width: 230px;
     height: 70px;
@@ -803,6 +807,7 @@
 
 .archive.post__title {
   font-size: 16px;
+  font-weight: bold;
 }
 @media screen and (min-width: 835px) {
   .archive.post__title {
@@ -810,7 +815,7 @@
   }
 }
 .archive.post__date {
-  margin: 20px 0;
+  margin: 10px 0;
   font-size: 12px;
 }
 @media screen and (min-width: 835px) {
@@ -831,6 +836,7 @@
 .news-page .news-page__title {
   font-size: 24px;
   margin: 25px 0;
+  font-weight: bold;
 }
 @media screen and (min-width: 835px) {
   .news-page .news-page__title {
@@ -875,13 +881,15 @@
 nav {
   display: flex;
   justify-content: center;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   font-size: 20px;
 }
-
-.pagination {
-  margin-top: 40px;
+@media screen and (min-width: 835px) {
+  nav {
+    margin-bottom: 50px;
+  }
 }
+
 @media screen and (min-width: 835px) {
   .pagination {
     margin-top: 20px;
@@ -902,7 +910,7 @@ nav {
   display: grid;
   place-items: center;
 }
-.pagination .page-numbers.next {
+.pagination .page-numbers.next, .pagination .page-numbers.prev {
   display: none;
 }
 @media screen and (min-width: 835px) {
@@ -941,12 +949,12 @@ nav {
   font-size: 32px;
   font-weight: bold;
   margin-top: 3rem;
-  padding: 4rem 0 3rem;
+  padding: 60px 0 40px;
   text-align: center;
 }
 @media screen and (min-width: 835px) {
   .contact-page__title {
-    padding: 3rem 0 3rem;
+    padding: 50px 0 40px;
     font-size: 45px;
   }
 }
@@ -972,50 +980,51 @@ label {
 dt,
 dd {
   font-weight: normal !important;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 dd {
-  margin-bottom: 40px;
+  margin-bottom: 36px;
+}
+@media screen and (min-width: 835px) {
+  dd {
+    margin-bottom: 33px;
+  }
 }
 
 input[type=text] {
   border: 1px solid rgba(0, 0, 0, 0.3);
   background: white;
-  width: 335px;
+  width: 100%;
   height: 60px;
 }
 @media screen and (min-width: 835px) {
   input[type=text] {
     height: 72px;
-    width: 600px;
   }
 }
 
 input[type=email] {
   background: white;
   border: 1px solid rgba(0, 0, 0, 0.3);
-  width: 335px;
+  width: 100%;
   height: 60px;
-  margin-top: -20px;
 }
 @media screen and (min-width: 835px) {
   input[type=email] {
     height: 72px;
-    width: 600px;
   }
 }
 
 textarea {
   background: white !important;
   border: 1px solid rgba(0, 0, 0, 0.3);
-  width: 335px;
+  width: 100%;
   height: 150px;
 }
 @media screen and (min-width: 835px) {
   textarea {
     height: 135px;
-    width: 600px;
   }
 }
 
@@ -1212,7 +1221,7 @@ a {
 }
 @media screen and (min-width: 835px) {
   .sec-contact {
-    padding: 3rem 0 3rem;
+    padding: 2rem 0 3rem;
   }
 }
 .sec-contact .sec-contact__title {
@@ -1265,6 +1274,7 @@ a {
   justify-content: center;
   gap: 5px;
   font-size: 20px;
+  font-weight: bold;
 }
 @media screen and (min-width: 835px) {
   .sec-contact .sec-contact__container .sec-contact__txt .sec-contact__txt--tel {
